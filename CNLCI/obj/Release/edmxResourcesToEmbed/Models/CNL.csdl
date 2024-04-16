@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CONALEPcheckinModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Alumno">
+    <Key>
+      <PropertyRef Name="Matricula" />
+    </Key>
+    <Property Name="Matricula" Type="String" MaxLength="13" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Primer_apellido" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Segundo_apellido" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Email_institucional" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CURP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Dom_Colonia" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Cd__Localidad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Dom_CP" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="Dom_Ciudad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Dom_Ent_Fed" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Periodo_Escolar_Inicio" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="Calle" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="Municipio" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Tel_Celular" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="Teléfono" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="E_mail" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Plan_de_Estudios" Type="String" MaxLength="70" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Grupo_Referente" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Activo" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="bitacora">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="accion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="realizada_por" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fecha" Type="DateTime" Precision="0" />
+    <Property Name="tabla" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="folio" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Carrera">
+    <Key>
+      <PropertyRef Name="Plan_de_Estudios_Cve" />
+    </Key>
+    <Property Name="Plan_de_Estudios_Cve" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Plan_de_Estudios" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Grupo" Relationship="Self.FK__Grupo__Plan_de_E__65370702" FromRole="Carrera" ToRole="Grupo" />
+  </EntityType>
+  <EntityType Name="Grupo">
+    <Key>
+      <PropertyRef Name="Grupo_Referente" />
+    </Key>
+    <Property Name="Plan_de_Estudios_Cve" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="Grupo_Referente" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Carrera" Relationship="Self.FK__Grupo__Plan_de_E__65370702" FromRole="Grupo" ToRole="Carrera" />
+  </EntityType>
+  <EntityType Name="Justificante">
+    <Key>
+      <PropertyRef Name="No__justificante" />
+    </Key>
+    <Property Name="No__justificante" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Matricula" Type="String" MaxLength="13" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Primer_apellido" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Segundo_apellido" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Plan_de_Estudios" Type="String" MaxLength="70" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Grupo_Referente" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Motivo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Comprobante" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Fecha_del_dia" Type="DateTime" Precision="0" />
+    <Property Name="Fecha_al_dia" Type="DateTime" Precision="0" />
+    <Property Name="Valor" Type="Int32" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <Property Name="Observaciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ElaboradoPor" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Medico">
+    <Key>
+      <PropertyRef Name="Matricula" />
+    </Key>
+    <Property Name="Matricula" Type="String" MaxLength="13" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Médico_Cv_Filiación" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Médico_Institución_Médica" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="Médico_No_U_de_Salud" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Médico_Unidad_de_Salud" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Pase_de_salida">
+    <Key>
+      <PropertyRef Name="No__pase" />
+    </Key>
+    <Property Name="No__pase" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Matricula" Type="String" MaxLength="13" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Primer_apellido" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Segundo_apellido" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Plan_de_Estudios" Type="String" MaxLength="70" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Grupo_Referente" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Motivo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Autoriza" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Parentezco" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Medio_de_Autorizacion" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Comprobante" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Fecha" Type="DateTime" Precision="0" />
+    <Property Name="Valor" Type="Int32" Nullable="false" />
+    <Property Name="Activo" Type="Boolean" />
+    <Property Name="Observaciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ElaboradoPor" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tutor">
+    <Key>
+      <PropertyRef Name="Matricula" />
+    </Key>
+    <Property Name="Matricula" Type="String" MaxLength="13" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Tutor_Nombre" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Tutor_celular" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="Tutor_correo" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Tutor_telefono" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Ingreso">
+    <Key>
+      <PropertyRef Name="Matricula" />
+      <PropertyRef Name="Nombre" />
+      <PropertyRef Name="Primer_apellido" />
+      <PropertyRef Name="CURP" />
+      <PropertyRef Name="Grupo_Referente" />
+    </Key>
+    <Property Name="Matricula" Type="String" MaxLength="13" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Primer_apellido" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Segundo_apellido" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Email_institucional" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CURP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Plan_de_Estudios_Cve" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="Plan_de_Estudios" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="Médico_Cv_Filiación" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Médico_Institución_Médica" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="Médico_No_U_de_Salud" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Grupo_Referente" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Médico_Unidad_de_Salud" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Dom_Colonia" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Cd__Localidad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Dom_CP" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="Dom_Ciudad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Dom_Ent_Fed" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Periodo_Escolar_Inicio" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="Calle" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="Municipio" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Tel_Celular" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="E_mail" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Tutor_Nombre" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Tutor_celular" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="Teléfono" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="Tutor_correo" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Tutor_telefono" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK__Grupo__Plan_de_E__65370702">
+    <End Role="Carrera" Type="Self.Carrera" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Grupo" Type="Self.Grupo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Carrera">
+        <PropertyRef Name="Plan_de_Estudios_Cve" />
+      </Principal>
+      <Dependent Role="Grupo">
+        <PropertyRef Name="Plan_de_Estudios_Cve" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DB" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Alumno" EntityType="Self.Alumno" />
+    <EntitySet Name="bitacora" EntityType="Self.bitacora" />
+    <EntitySet Name="Carrera" EntityType="Self.Carrera" />
+    <EntitySet Name="Grupo" EntityType="Self.Grupo" />
+    <EntitySet Name="Justificante" EntityType="Self.Justificante" />
+    <EntitySet Name="Medico" EntityType="Self.Medico" />
+    <EntitySet Name="Pase_de_salida" EntityType="Self.Pase_de_salida" />
+    <EntitySet Name="Tutor" EntityType="Self.Tutor" />
+    <EntitySet Name="Ingreso" EntityType="Self.Ingreso" />
+    <AssociationSet Name="FK__Grupo__Plan_de_E__65370702" Association="Self.FK__Grupo__Plan_de_E__65370702">
+      <End Role="Carrera" EntitySet="Carrera" />
+      <End Role="Grupo" EntitySet="Grupo" />
+    </AssociationSet>
+    <FunctionImport Name="Activar">
+      <Parameter Name="identificador" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="copias" />
+    <FunctionImport Name="Desactivar">
+      <Parameter Name="identificador" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="importar">
+      <Parameter Name="RutaArchivo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="RAJ" ReturnType="Collection(CONALEPcheckinModel.RAJ_Result)">
+      <Parameter Name="matricula" Mode="In" Type="String" />
+      <Parameter Name="fechaI" Mode="In" Type="DateTime" />
+      <Parameter Name="fechaF" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="RCJ" ReturnType="Collection(CONALEPcheckinModel.RCJ_Result)">
+      <Parameter Name="fechaI" Mode="In" Type="DateTime" />
+      <Parameter Name="fechaF" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="RGJ" ReturnType="Collection(CONALEPcheckinModel.RGJ_Result)">
+      <Parameter Name="fechaI" Mode="In" Type="DateTime" />
+      <Parameter Name="fechaF" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="RMJ" ReturnType="Collection(CONALEPcheckinModel.RMJ_Result)">
+      <Parameter Name="fechaI" Mode="In" Type="DateTime" />
+      <Parameter Name="fechaF" Mode="In" Type="DateTime" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="RAJ_Result">
+    <Property Type="Int32" Name="Mes" Nullable="true" />
+    <Property Type="String" Name="MesNombre" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="Año" Nullable="true" />
+    <Property Type="Int32" Name="Total" Nullable="true" />
+    <Property Type="String" Name="Nombre" Nullable="false" MaxLength="40" />
+  </ComplexType>
+  <ComplexType Name="RCJ_Result">
+    <Property Type="String" Name="Plan_de_Estudios" Nullable="false" MaxLength="70" />
+    <Property Type="Int32" Name="Mes" Nullable="true" />
+    <Property Type="String" Name="MesNombre" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="Año" Nullable="true" />
+    <Property Type="Int32" Name="Total" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="RGJ_Result">
+    <Property Type="String" Name="Grupo_Referente" Nullable="false" MaxLength="15" />
+    <Property Type="Int32" Name="Mes" Nullable="true" />
+    <Property Type="String" Name="MesNombre" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="Año" Nullable="true" />
+    <Property Type="Int32" Name="Total" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="RMJ_Result">
+    <Property Type="String" Name="Motivo" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="Mes" Nullable="true" />
+    <Property Type="String" Name="MesNombre" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="Año" Nullable="true" />
+    <Property Type="Int32" Name="Total" Nullable="true" />
+  </ComplexType>
+</Schema>

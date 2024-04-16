@@ -1,0 +1,79 @@
+﻿
+<!DOCTYPE html>
+<html style="margin-bottom: 20%;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="~/Style/desing.css">
+    <title>@ViewBag.Title CONALEP</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="~/Style/desing.css" rel="stylesheet" />
+    
+
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <style>
+       
+        .lol {
+            color: white;
+            font-family: 'Century Gothic';
+            font-weight: bold;
+        }
+        .exp {
+            color: black;
+            font-family: 'Century Gothic';
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .esste {
+            height: 20em;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            width: 100%;
+        }
+        .esste2 {
+            height: 25em;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm is-success">
+        <div class="container">
+
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Alternar navegación" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+
+                @Html.Partial("_LoginPartial")
+            </div>
+
+        </div>
+    </nav>
+    <div class="container body-content" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+        <center>
+            @RenderBody()
+        </center>
+
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

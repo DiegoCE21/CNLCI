@@ -1,0 +1,163 @@
+﻿@model IEnumerable<CNLCI.Models.Pase_de_salida>
+@{
+    ViewBag.Title = "PaseS";
+}
+
+<main>
+    <div class="container Marco">
+        <div style="margin-bottom: 20px;">
+            <center>
+                <h1 class="title">Historial de pases de salida</h1>
+            </center>
+        </div>
+        <div class="field is-horizontal">
+            <div class="field-body">
+
+                <div class="column is-offset-3 is-half">
+                    <div class="field">
+                        <input class="input" type="text" name="matricula" placeholder="Buscar justificante por matrícula" maxlength="11" id="matricula">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container este Marco">
+
+            <table class="table" id="miTabla">
+                <thead>
+                    <tr>
+                        <th>
+                            <center>No. de Pase</center>
+                        </th>
+                        <th>
+                            <center>Matrícula</center>
+                        </th>
+                        <th>
+                            <center>Grupo</center>
+                        </th>
+                        <th>
+                            <center>Motivo</center>
+                        </th>
+                        <th>
+                            <center>Fecha</center>
+                        </th>
+
+                        <th><center>Acciones</center></th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpo">
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+
+                            <th>
+                                <center>  @item.No__pase</center>
+                            </th>
+                            <td>
+                                <center> @Html.DisplayFor(modelItem => item.Matricula) </center>
+                            </td>
+
+                            <td>
+                                <center> @Html.DisplayFor(modelItem => item.Grupo_Referente)</center>
+                            </td>
+                            <td>
+                                <center> @Html.DisplayFor(modelItem => item.Motivo)</center>
+                            </td>
+
+                            <td>
+                                <center>
+                                    @item.Fecha.ToString().Substring(0, 10)
+                                </center>
+                            </td>
+
+                            <td>
+
+                                <center>
+                                    <p>
+                                        @Html.ActionLink("Justificante", "GenerarPDFP", "Historial", new { id = item.No__pase }, new { @class = "button is-rounded button-link is-primary", style = "height: 50%; max-width: auto;", target = "_blank" })@Html.ActionLink("Comprobante", "p", "Historial", new { id = item.No__pase }, new { @class = "button is-rounded button-link", style = "height: 50%; max-width:auto ;", target = "_blank" })
+                                    </p>
+                                    
+                                </center>
+                               
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+
+            </table>
+
+
+        </div>
+    </div>
+</main>
+
+
+<script>
+
+        document.getElementById("matricula").addEventListener("input", function () {
+
+        var matricula = this.value;
+        fetch('@Url.Action("buscadorP", "Historial")', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ matricula: matricula })
+})
+.then(response => response.json())
+.then(data => {
+    console.log(data);
+
+    var cuerpo = document.getElementById("cuerpo");
+    cuerpo.innerHTML = '';
+
+    data.forEach(function (i) {
+        var fila = document.createElement('tr');
+        var c1 = document.createElement('td');
+        var c2 = document.createElement('td');
+        var c3 = document.createElement('td');
+        var c4 = document.createElement('td');
+        var c5 = document.createElement('td');
+
+
+        var c6 = document.createElement('td');
+        var boton = document.createElement('button');
+        boton.textContent = 'Justificante';
+        boton.className = "button is-rounded button-link is-primary";
+        boton.style.height = "50%";
+        boton.style.maxWidth = "auto" ;
+        boton.onclick = function () {
+            window.open("/Historial/GenerarPDFP?id=" + i.No__pase, "_blank");
+        };
+        var boton2 = document.createElement('button');
+        boton2.textContent = 'Comprobante';
+        boton2.className = "button is-rounded button-link";
+        boton2.style.height = "50%";
+        boton2.style.maxWidth = "auto";
+        boton2.onclick = function () {
+            window.open("/Historial/p?id=" + i.No__pase, "_blank");
+        };
+
+        c6.appendChild(boton);
+        c6.appendChild(boton2);
+        c1.textContent = i.No__pase;
+        c2.textContent = i.Matricula;
+        c3.textContent = i.Grupo_Referente;
+        c4.textContent = i.Motivo;
+        c5.textContent = i.Fecha;
+        [c1, c2, c3, c4, c5, c6].forEach(function (c) {
+            c.style.textAlign = "center";
+        });
+        fila.appendChild(c1);
+        fila.appendChild(c2);
+        fila.appendChild(c3);
+        fila.appendChild(c4);
+        fila.appendChild(c5);
+        fila.appendChild(c6);
+        cuerpo.appendChild(fila);
+    });
+})
+       .catch(error => {
+           console.error("Error:", error);
+       });
+        });
+    </script>

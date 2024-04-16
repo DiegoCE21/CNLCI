@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CONALEPcheckinModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Alumno">
+    <Key>
+      <PropertyRef Name="Matricula" />
+    </Key>
+    <Property Name="Matricula" Type="varchar" MaxLength="13" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="Primer apellido" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Segundo apellido" Type="varchar" MaxLength="20" />
+    <Property Name="Email institucional" Type="varchar" MaxLength="50" />
+    <Property Name="CURP" Type="varchar" MaxLength="20" />
+    <Property Name="Dom Colonia" Type="varchar" MaxLength="60" />
+    <Property Name="Cd./Localidad" Type="varchar" MaxLength="50" />
+    <Property Name="Dom CP" Type="varchar" MaxLength="8" />
+    <Property Name="Dom Ciudad" Type="varchar" MaxLength="50" />
+    <Property Name="Dom Ent Fed" Type="varchar" MaxLength="20" />
+    <Property Name="Periodo Escolar Inicio" Type="varchar" MaxLength="8" />
+    <Property Name="Calle" Type="varchar" MaxLength="70" />
+    <Property Name="Municipio" Type="varchar" MaxLength="40" />
+    <Property Name="Tel Celular" Type="varchar" MaxLength="14" />
+    <Property Name="Teléfono" Type="varchar" MaxLength="14" />
+    <Property Name="E-mail" Type="varchar" MaxLength="60" />
+    <Property Name="Plan de Estudios" Type="varchar" MaxLength="70" Nullable="false" />
+    <Property Name="Grupo Referente" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Activo" Type="bit" />
+  </EntityType>
+  <EntityType Name="bitacora">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="accion" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="realizada_por" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="fecha" Type="date" />
+    <Property Name="tabla" Type="varchar" MaxLength="20" />
+    <Property Name="folio" Type="int" />
+  </EntityType>
+  <EntityType Name="Carrera">
+    <Key>
+      <PropertyRef Name="Plan de Estudios Cve" />
+    </Key>
+    <Property Name="Plan de Estudios Cve" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="Plan de Estudios" Type="varchar" MaxLength="70" />
+  </EntityType>
+  <EntityType Name="Grupo">
+    <Key>
+      <PropertyRef Name="Grupo Referente" />
+    </Key>
+    <Property Name="Plan de Estudios Cve" Type="varchar" MaxLength="8" />
+    <Property Name="Grupo Referente" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'CONALEPcheckin.dbo.Ingreso' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="Ingreso">
+    <Key>
+      <PropertyRef Name="Matricula" />
+      <PropertyRef Name="Nombre" />
+      <PropertyRef Name="Primer apellido" />
+      <PropertyRef Name="CURP" />
+      <PropertyRef Name="Grupo Referente" />
+    </Key>
+    <Property Name="Matricula" Type="varchar" MaxLength="13" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="Primer apellido" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Segundo apellido" Type="varchar" MaxLength="20" />
+    <Property Name="Email institucional" Type="varchar" MaxLength="50" />
+    <Property Name="CURP" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Plan de Estudios Cve" Type="varchar" MaxLength="8" />
+    <Property Name="Plan de Estudios" Type="varchar" MaxLength="70" />
+    <Property Name="Médico Cv Filiación" Type="varchar" MaxLength="20" />
+    <Property Name="Médico Institución Médica" Type="varchar" MaxLength="90" />
+    <Property Name="Médico No U.de Salud" Type="varchar" MaxLength="15" />
+    <Property Name="Grupo Referente" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Médico Unidad de Salud" Type="varchar" MaxLength="50" />
+    <Property Name="Dom Colonia" Type="varchar" MaxLength="60" />
+    <Property Name="Cd./Localidad" Type="varchar" MaxLength="50" />
+    <Property Name="Dom CP" Type="varchar" MaxLength="8" />
+    <Property Name="Dom Ciudad" Type="varchar" MaxLength="50" />
+    <Property Name="Dom Ent Fed" Type="varchar" MaxLength="20" />
+    <Property Name="Periodo Escolar Inicio" Type="varchar" MaxLength="8" />
+    <Property Name="Calle" Type="varchar" MaxLength="70" />
+    <Property Name="Municipio" Type="varchar" MaxLength="40" />
+    <Property Name="Tel Celular" Type="varchar" MaxLength="14" />
+    <Property Name="E-mail" Type="varchar" MaxLength="60" />
+    <Property Name="Tutor Nombre" Type="varchar" MaxLength="60" />
+    <Property Name="Tutor celular" Type="varchar" MaxLength="14" />
+    <Property Name="Teléfono" Type="varchar" MaxLength="14" />
+    <Property Name="Tutor correo" Type="varchar" MaxLength="60" />
+    <Property Name="Tutor telefono" Type="varchar" MaxLength="14" />
+  </EntityType>
+  <EntityType Name="Justificante">
+    <Key>
+      <PropertyRef Name="No. justificante" />
+    </Key>
+    <Property Name="No. justificante" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Matricula" Type="varchar" MaxLength="13" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="Primer apellido" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Segundo apellido" Type="varchar" MaxLength="20" />
+    <Property Name="Plan de Estudios" Type="varchar" MaxLength="70" Nullable="false" />
+    <Property Name="Grupo Referente" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Motivo" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Comprobante" Type="varbinary(max)" />
+    <Property Name="Fecha del dia" Type="date" />
+    <Property Name="Fecha al dia" Type="date" />
+    <Property Name="Valor" Type="int" />
+    <Property Name="Activo" Type="bit" Nullable="false" />
+    <Property Name="Observaciones" Type="ntext" />
+    <Property Name="ElaboradoPor" Type="varchar" MaxLength="80" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Medico">
+    <Key>
+      <PropertyRef Name="Matricula" />
+    </Key>
+    <Property Name="Matricula" Type="varchar" MaxLength="13" Nullable="false" />
+    <Property Name="Médico Cv Filiación" Type="varchar" MaxLength="20" />
+    <Property Name="Médico Institución Médica" Type="varchar" MaxLength="90" />
+    <Property Name="Médico No U.de Salud" Type="varchar" MaxLength="15" />
+    <Property Name="Médico Unidad de Salud" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Pase de salida">
+    <Key>
+      <PropertyRef Name="No. pase" />
+    </Key>
+    <Property Name="No. pase" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Matricula" Type="varchar" MaxLength="13" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="Primer apellido" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Segundo apellido" Type="varchar" MaxLength="20" />
+    <Property Name="Plan de Estudios" Type="varchar" MaxLength="70" Nullable="false" />
+    <Property Name="Grupo Referente" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Motivo" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Autoriza" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="Parentezco" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Medio de Autorizacion" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Comprobante" Type="varbinary(max)" />
+    <Property Name="Fecha" Type="date" />
+    <Property Name="Valor" Type="int" Nullable="false" />
+    <Property Name="Activo" Type="bit" />
+    <Property Name="Observaciones" Type="ntext" />
+    <Property Name="ElaboradoPor" Type="varchar" MaxLength="80" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tutor">
+    <Key>
+      <PropertyRef Name="Matricula" />
+    </Key>
+    <Property Name="Matricula" Type="varchar" MaxLength="13" Nullable="false" />
+    <Property Name="Tutor Nombre" Type="varchar" MaxLength="60" />
+    <Property Name="Tutor celular" Type="varchar" MaxLength="14" />
+    <Property Name="Tutor correo" Type="varchar" MaxLength="60" />
+    <Property Name="Tutor telefono" Type="varchar" MaxLength="14" />
+  </EntityType>
+  <Association Name="FK__Grupo__Plan de E__65370702">
+    <End Role="Carrera" Type="Self.Carrera" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Grupo" Type="Self.Grupo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Carrera">
+        <PropertyRef Name="Plan de Estudios Cve" />
+      </Principal>
+      <Dependent Role="Grupo">
+        <PropertyRef Name="Plan de Estudios Cve" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="Activar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="identificador" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="copias" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="Desactivar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="identificador" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="importar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RutaArchivo" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="RAJ" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="matricula" Type="varchar" Mode="In" />
+    <Parameter Name="fechaI" Type="datetime" Mode="In" />
+    <Parameter Name="fechaF" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="RCJ" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fechaI" Type="datetime" Mode="In" />
+    <Parameter Name="fechaF" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="RGJ" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fechaI" Type="datetime" Mode="In" />
+    <Parameter Name="fechaF" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="RMJ" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fechaI" Type="datetime" Mode="In" />
+    <Parameter Name="fechaF" Type="datetime" Mode="In" />
+  </Function>
+  <EntityContainer Name="CONALEPcheckinModelStoreContainer">
+    <EntitySet Name="Alumno" EntityType="Self.Alumno" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="bitacora" EntityType="Self.bitacora" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Carrera" EntityType="Self.Carrera" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Grupo" EntityType="Self.Grupo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Justificante" EntityType="Self.Justificante" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Medico" EntityType="Self.Medico" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pase de salida" EntityType="Self.Pase de salida" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tutor" EntityType="Self.Tutor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ingreso" EntityType="Self.Ingreso" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Ingreso].[Matricula] AS [Matricula], 
+    [Ingreso].[Nombre] AS [Nombre], 
+    [Ingreso].[Primer apellido] AS [Primer apellido], 
+    [Ingreso].[Segundo apellido] AS [Segundo apellido], 
+    [Ingreso].[Email institucional] AS [Email institucional], 
+    [Ingreso].[CURP] AS [CURP], 
+    [Ingreso].[Plan de Estudios Cve] AS [Plan de Estudios Cve], 
+    [Ingreso].[Plan de Estudios] AS [Plan de Estudios], 
+    [Ingreso].[Médico Cv Filiación] AS [Médico Cv Filiación], 
+    [Ingreso].[Médico Institución Médica] AS [Médico Institución Médica], 
+    [Ingreso].[Médico No U.de Salud] AS [Médico No U.de Salud], 
+    [Ingreso].[Grupo Referente] AS [Grupo Referente], 
+    [Ingreso].[Médico Unidad de Salud] AS [Médico Unidad de Salud], 
+    [Ingreso].[Dom Colonia] AS [Dom Colonia], 
+    [Ingreso].[Cd./Localidad] AS [Cd./Localidad], 
+    [Ingreso].[Dom CP] AS [Dom CP], 
+    [Ingreso].[Dom Ciudad] AS [Dom Ciudad], 
+    [Ingreso].[Dom Ent Fed] AS [Dom Ent Fed], 
+    [Ingreso].[Periodo Escolar Inicio] AS [Periodo Escolar Inicio], 
+    [Ingreso].[Calle] AS [Calle], 
+    [Ingreso].[Municipio] AS [Municipio], 
+    [Ingreso].[Tel Celular] AS [Tel Celular], 
+    [Ingreso].[E-mail] AS [E-mail], 
+    [Ingreso].[Tutor Nombre] AS [Tutor Nombre], 
+    [Ingreso].[Tutor celular] AS [Tutor celular], 
+    [Ingreso].[Teléfono] AS [Teléfono], 
+    [Ingreso].[Tutor correo] AS [Tutor correo], 
+    [Ingreso].[Tutor telefono] AS [Tutor telefono]
+    FROM [dbo].[Ingreso] AS [Ingreso]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__Grupo__Plan de E__65370702" Association="Self.FK__Grupo__Plan de E__65370702">
+      <End Role="Carrera" EntitySet="Carrera" />
+      <End Role="Grupo" EntitySet="Grupo" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,65 @@
+﻿
+
+<div class="column is-2-4">
+    <div class="field">
+        <div class="control">
+            <div class="select" style=" width: 100%">
+                <select name="Carrera" id="IDCARRERA" onchange="cargarGrupos()">
+
+                    <option value="" style="display: none;">Seleccionar carrera</option>
+                    <option value="Profesional Técnico-Bachiller en Contabilidad">Contabilidad</option>
+                    <option value="Profesional Técnico-Bachiller en Enfermería General">Enfermería General</option>
+                    <option value="Profesional Técnico-Bachiller en Electromecánica Industrial">Electromecánica Industrial</option>
+
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="column is-one-quarter">
+    <div class="field">
+       <div class="control">
+        <div class="select" name="G" id="G"  style=" width: 100%">
+            <select id="IDGRUPO" name="Grupo">
+                <option value="" style="display: none;">Seleccionar grupo</option>
+
+            </select>
+        </div>
+    </div></div>
+</div>
+
+<script>
+  function cargarGrupos() {
+         
+        const seleccionCarrera = document.getElementById('IDCARRERA'); 
+        const planDeEstudiosCve = seleccionCarrera.value; 
+
+         
+        if (planDeEstudiosCve) { 
+            fetch('@Url.Action("ObtenerGruposPorCarrera", "Justificantes")?planDeEstudiosCve=' + planDeEstudiosCve) 
+                .then(response => response.json()) 
+                .then(data => { 
+                    
+                    const dropdown = document.getElementById('IDGRUPO'); 
+                    dropdown.innerHTML = ''; 
+
+                    data.forEach(opcion => { 
+                        const optionElement = document.createElement('option'); 
+                        optionElement.value = opcion.Nombre;
+                        optionElement.text = opcion.Nombre;
+                        dropdown.appendChild(optionElement); 
+                    });  
+                }) 
+                .catch(error => console.error('Error al obtener datos:', error)); 
+        }
+    }
+
+  
+    document.getElementById('IDCARRERA').addEventListener('change', cargarGrupos); 
+
+</script>
+

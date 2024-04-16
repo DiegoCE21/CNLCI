@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "identityapp1": {
+      "secretStore": null,
+      "resourceId": null,
+      "type": "identityapp.default",
+      "connectionId": null
+    },
+    "office365_1": {
+      "type": "office365_.graph"
+    }
+  }
+}

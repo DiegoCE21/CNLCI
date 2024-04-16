@@ -1,0 +1,856 @@
+D:\CNLCI\CNLCI\bin\CNLCI.dll.config
+D:\CNLCI\CNLCI\bin\CNLCI.dll
+D:\CNLCI\CNLCI\bin\CNLCI.pdb
+D:\CNLCI\CNLCI\bin\roslyn\csc.exe
+D:\CNLCI\CNLCI\bin\roslyn\csc.exe.config
+D:\CNLCI\CNLCI\bin\roslyn\csc.rsp
+D:\CNLCI\CNLCI\bin\roslyn\csi.exe
+D:\CNLCI\CNLCI\bin\roslyn\csi.exe.config
+D:\CNLCI\CNLCI\bin\roslyn\csi.rsp
+D:\CNLCI\CNLCI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\CNLCI\CNLCI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\CNLCI\CNLCI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\CNLCI\CNLCI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\CNLCI\CNLCI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\CNLCI\CNLCI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\CNLCI\CNLCI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\CNLCI\CNLCI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\CNLCI\CNLCI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\CNLCI\CNLCI\bin\roslyn\Microsoft.Managed.Core.targets
+D:\CNLCI\CNLCI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\CNLCI\CNLCI\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\CNLCI\CNLCI\bin\roslyn\System.AppContext.dll
+D:\CNLCI\CNLCI\bin\roslyn\System.Collections.Immutable.dll
+D:\CNLCI\CNLCI\bin\roslyn\System.Console.dll
+D:\CNLCI\CNLCI\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\CNLCI\CNLCI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\CNLCI\CNLCI\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\CNLCI\CNLCI\bin\roslyn\System.Globalization.Calendars.dll
+D:\CNLCI\CNLCI\bin\roslyn\System.IO.Compression.dll
+D:\CNLCI\CNLCI\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\CNLCI\CNLCI\bin\roslyn\System.IO.FileSystem.dll
+D:\CNLCI\CNLCI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\CNLCI\CNLCI\bin\roslyn\System.Net.Http.dll
+D:\CNLCI\CNLCI\bin\roslyn\System.Net.Sockets.dll
+D:\CNLCI\CNLCI\bin\roslyn\System.Reflection.Metadata.dll
+D:\CNLCI\CNLCI\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\CNLCI\CNLCI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\CNLCI\CNLCI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\CNLCI\CNLCI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\CNLCI\CNLCI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\CNLCI\CNLCI\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\CNLCI\CNLCI\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\CNLCI\CNLCI\bin\roslyn\System.ValueTuple.dll
+D:\CNLCI\CNLCI\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\CNLCI\CNLCI\bin\roslyn\System.Xml.XmlDocument.dll
+D:\CNLCI\CNLCI\bin\roslyn\System.Xml.XPath.dll
+D:\CNLCI\CNLCI\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\CNLCI\CNLCI\bin\roslyn\vbc.exe
+D:\CNLCI\CNLCI\bin\roslyn\vbc.exe.config
+D:\CNLCI\CNLCI\bin\roslyn\vbc.rsp
+D:\CNLCI\CNLCI\bin\roslyn\VBCSCompiler.exe
+D:\CNLCI\CNLCI\bin\roslyn\VBCSCompiler.exe.config
+D:\CNLCI\CNLCI\bin\Antlr3.Runtime.dll
+D:\CNLCI\CNLCI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\CNLCI\CNLCI\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\CNLCI\CNLCI\bin\Microsoft.IdentityModel.Logging.dll
+D:\CNLCI\CNLCI\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+D:\CNLCI\CNLCI\bin\Microsoft.IdentityModel.Protocols.dll
+D:\CNLCI\CNLCI\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\CNLCI\CNLCI\bin\Microsoft.IdentityModel.Tokens.dll
+D:\CNLCI\CNLCI\bin\Microsoft.Owin.dll
+D:\CNLCI\CNLCI\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\CNLCI\CNLCI\bin\Microsoft.Owin.Security.Cookies.dll
+D:\CNLCI\CNLCI\bin\Microsoft.Owin.Security.dll
+D:\CNLCI\CNLCI\bin\Microsoft.Owin.Security.OpenIdConnect.dll
+D:\CNLCI\CNLCI\bin\Microsoft.Web.Infrastructure.dll
+D:\CNLCI\CNLCI\bin\Newtonsoft.Json.dll
+D:\CNLCI\CNLCI\bin\Owin.dll
+D:\CNLCI\CNLCI\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\CNLCI\CNLCI\bin\System.Web.Helpers.dll
+D:\CNLCI\CNLCI\bin\System.Web.Mvc.dll
+D:\CNLCI\CNLCI\bin\System.Web.Optimization.dll
+D:\CNLCI\CNLCI\bin\System.Web.Razor.dll
+D:\CNLCI\CNLCI\bin\System.Web.WebPages.Deployment.dll
+D:\CNLCI\CNLCI\bin\System.Web.WebPages.dll
+D:\CNLCI\CNLCI\bin\System.Web.WebPages.Razor.dll
+D:\CNLCI\CNLCI\bin\WebGrease.dll
+D:\CNLCI\CNLCI\bin\System.Web.Helpers.xml
+D:\CNLCI\CNLCI\bin\System.Web.Mvc.xml
+D:\CNLCI\CNLCI\bin\System.Web.Optimization.xml
+D:\CNLCI\CNLCI\bin\System.Web.Razor.xml
+D:\CNLCI\CNLCI\bin\System.Web.WebPages.xml
+D:\CNLCI\CNLCI\bin\System.Web.WebPages.Deployment.xml
+D:\CNLCI\CNLCI\bin\System.Web.WebPages.Razor.xml
+D:\CNLCI\CNLCI\bin\Newtonsoft.Json.xml
+D:\CNLCI\CNLCI\bin\Antlr3.Runtime.pdb
+D:\CNLCI\CNLCI\bin\Microsoft.Owin.xml
+D:\CNLCI\CNLCI\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\CNLCI\CNLCI\bin\Microsoft.Owin.Security.xml
+D:\CNLCI\CNLCI\bin\Microsoft.Owin.Security.Cookies.xml
+D:\CNLCI\CNLCI\bin\Microsoft.IdentityModel.Logging.xml
+D:\CNLCI\CNLCI\bin\Microsoft.IdentityModel.Tokens.xml
+D:\CNLCI\CNLCI\bin\Microsoft.IdentityModel.Protocols.xml
+D:\CNLCI\CNLCI\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+D:\CNLCI\CNLCI\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\CNLCI\CNLCI\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\CNLCI\CNLCI\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+D:\CNLCI\CNLCI\bin\Microsoft.Owin.Security.OpenIdConnect.xml
+D:\CNLCI\CNLCI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\CNLCI\CNLCI\bin\es\System.Web.Helpers.resources.dll
+D:\CNLCI\CNLCI\bin\es\System.Web.Mvc.resources.dll
+D:\CNLCI\CNLCI\bin\es\System.Web.Optimization.resources.dll
+D:\CNLCI\CNLCI\bin\es\System.Web.Razor.resources.dll
+D:\CNLCI\CNLCI\bin\es\System.Web.WebPages.resources.dll
+D:\CNLCI\CNLCI\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\CNLCI\CNLCI\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\CNLCI\CNLCI\obj\Debug\CNLCI.csproj.AssemblyReference.cache
+D:\CNLCI\CNLCI\obj\Debug\CNLCI.csproj.CoreCompileInputs.cache
+D:\CNLCI\CNLCI\obj\Debug\CNLCI.csproj.CopyComplete
+D:\CNLCI\CNLCI\obj\Debug\CNLCI.dll
+D:\CNLCI\CNLCI\obj\Debug\CNLCI.pdb
+D:\CNLCI\CNLCI\bin\EntityFramework.dll
+D:\CNLCI\CNLCI\bin\EntityFramework.SqlServer.dll
+D:\CNLCI\CNLCI\bin\EntityFramework.xml
+D:\CNLCI\CNLCI\bin\EntityFramework.SqlServer.xml
+D:\CNLCI\CNLCI\bin\Rotativa.dll
+D:\CNLCI - CGraficas\CNLCI\bin\CNLCI.dll.config
+D:\CNLCI - CGraficas\CNLCI\bin\CNLCI.dll
+D:\CNLCI - CGraficas\CNLCI\bin\CNLCI.pdb
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\csc.exe
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\csc.exe.config
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\csc.rsp
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\csi.exe
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\csi.exe.config
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\csi.rsp
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.Managed.Core.targets
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\System.AppContext.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Collections.Immutable.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Console.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Globalization.Calendars.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\System.IO.Compression.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\System.IO.FileSystem.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Net.Http.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Net.Sockets.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Reflection.Metadata.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\System.ValueTuple.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Xml.XmlDocument.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Xml.XPath.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\vbc.exe
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\vbc.exe.config
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\vbc.rsp
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\VBCSCompiler.exe
+D:\CNLCI - CGraficas\CNLCI\bin\roslyn\VBCSCompiler.exe.config
+D:\CNLCI - CGraficas\CNLCI\bin\Antlr3.Runtime.dll
+D:\CNLCI - CGraficas\CNLCI\bin\EntityFramework.dll
+D:\CNLCI - CGraficas\CNLCI\bin\EntityFramework.SqlServer.dll
+D:\CNLCI - CGraficas\CNLCI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Logging.dll
+D:\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+D:\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Protocols.dll
+D:\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Tokens.dll
+D:\CNLCI - CGraficas\CNLCI\bin\Microsoft.Owin.dll
+D:\CNLCI - CGraficas\CNLCI\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\CNLCI - CGraficas\CNLCI\bin\Microsoft.Owin.Security.Cookies.dll
+D:\CNLCI - CGraficas\CNLCI\bin\Microsoft.Owin.Security.dll
+D:\CNLCI - CGraficas\CNLCI\bin\Microsoft.Owin.Security.OpenIdConnect.dll
+D:\CNLCI - CGraficas\CNLCI\bin\Microsoft.Web.Infrastructure.dll
+D:\CNLCI - CGraficas\CNLCI\bin\Newtonsoft.Json.dll
+D:\CNLCI - CGraficas\CNLCI\bin\Owin.dll
+D:\CNLCI - CGraficas\CNLCI\bin\Rotativa.dll
+D:\CNLCI - CGraficas\CNLCI\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\CNLCI - CGraficas\CNLCI\bin\System.Web.Helpers.dll
+D:\CNLCI - CGraficas\CNLCI\bin\System.Web.Mvc.dll
+D:\CNLCI - CGraficas\CNLCI\bin\System.Web.Optimization.dll
+D:\CNLCI - CGraficas\CNLCI\bin\System.Web.Razor.dll
+D:\CNLCI - CGraficas\CNLCI\bin\System.Web.WebPages.Deployment.dll
+D:\CNLCI - CGraficas\CNLCI\bin\System.Web.WebPages.dll
+D:\CNLCI - CGraficas\CNLCI\bin\System.Web.WebPages.Razor.dll
+D:\CNLCI - CGraficas\CNLCI\bin\WebGrease.dll
+D:\CNLCI - CGraficas\CNLCI\bin\EntityFramework.xml
+D:\CNLCI - CGraficas\CNLCI\bin\EntityFramework.SqlServer.xml
+D:\CNLCI - CGraficas\CNLCI\bin\System.Web.Helpers.xml
+D:\CNLCI - CGraficas\CNLCI\bin\System.Web.Mvc.xml
+D:\CNLCI - CGraficas\CNLCI\bin\System.Web.Optimization.xml
+D:\CNLCI - CGraficas\CNLCI\bin\System.Web.Razor.xml
+D:\CNLCI - CGraficas\CNLCI\bin\System.Web.WebPages.xml
+D:\CNLCI - CGraficas\CNLCI\bin\System.Web.WebPages.Deployment.xml
+D:\CNLCI - CGraficas\CNLCI\bin\System.Web.WebPages.Razor.xml
+D:\CNLCI - CGraficas\CNLCI\bin\Newtonsoft.Json.xml
+D:\CNLCI - CGraficas\CNLCI\bin\Antlr3.Runtime.pdb
+D:\CNLCI - CGraficas\CNLCI\bin\Microsoft.Owin.xml
+D:\CNLCI - CGraficas\CNLCI\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\CNLCI - CGraficas\CNLCI\bin\Microsoft.Owin.Security.xml
+D:\CNLCI - CGraficas\CNLCI\bin\Microsoft.Owin.Security.Cookies.xml
+D:\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Logging.xml
+D:\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Tokens.xml
+D:\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Protocols.xml
+D:\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+D:\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\CNLCI - CGraficas\CNLCI\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+D:\CNLCI - CGraficas\CNLCI\bin\Microsoft.Owin.Security.OpenIdConnect.xml
+D:\CNLCI - CGraficas\CNLCI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\CNLCI - CGraficas\CNLCI\bin\es\System.Web.Helpers.resources.dll
+D:\CNLCI - CGraficas\CNLCI\bin\es\System.Web.Mvc.resources.dll
+D:\CNLCI - CGraficas\CNLCI\bin\es\System.Web.Optimization.resources.dll
+D:\CNLCI - CGraficas\CNLCI\bin\es\System.Web.Razor.resources.dll
+D:\CNLCI - CGraficas\CNLCI\bin\es\System.Web.WebPages.resources.dll
+D:\CNLCI - CGraficas\CNLCI\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\CNLCI - CGraficas\CNLCI\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\CNLCI - CGraficas\CNLCI\obj\Debug\CNLCI.csproj.AssemblyReference.cache
+D:\CNLCI - CGraficas\CNLCI\obj\Debug\CNLCI.csproj.CoreCompileInputs.cache
+D:\CNLCI - CGraficas\CNLCI\obj\Debug\CNLCI.csproj.CopyComplete
+D:\CNLCI - CGraficas\CNLCI\obj\Debug\CNLCI.dll
+D:\CNLCI - CGraficas\CNLCI\obj\Debug\CNLCI.pdb
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\CNLCI.dll.config
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\CNLCI.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\CNLCI.pdb
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\csc.exe
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\csc.exe.config
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\csc.rsp
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\csi.exe
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\csi.exe.config
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\csi.rsp
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.Managed.Core.targets
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\System.AppContext.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Collections.Immutable.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Console.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Globalization.Calendars.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\System.IO.Compression.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\System.IO.FileSystem.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Net.Http.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Net.Sockets.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Reflection.Metadata.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\System.ValueTuple.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Xml.XmlDocument.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Xml.XPath.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\vbc.exe
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\vbc.exe.config
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\vbc.rsp
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\VBCSCompiler.exe
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\roslyn\VBCSCompiler.exe.config
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Antlr3.Runtime.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\EntityFramework.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\EntityFramework.SqlServer.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Logging.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Protocols.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Tokens.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.Owin.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.Owin.Security.Cookies.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.Owin.Security.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.Owin.Security.OpenIdConnect.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.Web.Infrastructure.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Newtonsoft.Json.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Owin.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Rotativa.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Web.Helpers.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Web.Mvc.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Web.Optimization.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Web.Razor.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Web.WebPages.Deployment.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Web.WebPages.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Web.WebPages.Razor.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\WebGrease.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\EntityFramework.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\EntityFramework.SqlServer.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Web.Helpers.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Web.Mvc.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Web.Optimization.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Web.Razor.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Web.WebPages.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Web.WebPages.Deployment.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Web.WebPages.Razor.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Newtonsoft.Json.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Antlr3.Runtime.pdb
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.Owin.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.Owin.Security.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.Owin.Security.Cookies.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Logging.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Tokens.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Protocols.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.Owin.Security.OpenIdConnect.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\es\System.Web.Helpers.resources.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\es\System.Web.Mvc.resources.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\es\System.Web.Optimization.resources.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\es\System.Web.Razor.resources.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\es\System.Web.WebPages.resources.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\obj\Debug\CNLCI.csproj.AssemblyReference.cache
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\obj\Debug\CNLCI.csproj.CoreCompileInputs.cache
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\obj\Debug\CNLCI.csproj.CopyComplete
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\obj\Debug\CNLCI.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\obj\Debug\CNLCI.pdb
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Azure.Core.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\MailSenders.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.Graph.Core.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.Graph.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.Identity.Client.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Abstractions.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Buffers.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Diagnostics.DiagnosticSource.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Memory.Data.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Memory.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Net.Http.WinHttpHandler.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Numerics.Vectors.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Text.Encodings.Web.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Text.Json.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Threading.Tasks.Extensions.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.ValueTuple.dll
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Azure.Core.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\MailSenders.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.Graph.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.Graph.Core.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.Identity.Client.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Abstractions.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Buffers.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Diagnostics.DiagnosticSource.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Memory.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Memory.Data.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Net.Http.WinHttpHandler.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Numerics.Vectors.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Text.Encodings.Web.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Text.Json.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.Threading.Tasks.Extensions.xml
+D:\CNLCI - rf\CNLCI - CGraficas\CNLCI\bin\System.ValueTuple.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\CNLCI.dll.config
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\CNLCI.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\CNLCI.pdb
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\csc.exe
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\csc.exe.config
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\csc.rsp
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\csi.exe
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\csi.exe.config
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\csi.rsp
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\System.AppContext.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Console.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\System.IO.Compression.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Net.Http.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\System.ValueTuple.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\vbc.exe
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\vbc.exe.config
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\vbc.rsp
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\VBCSCompiler.exe
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Antlr3.Runtime.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Azure.Core.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\EntityFramework.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\EntityFramework.SqlServer.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\MailSenders.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.Graph.Core.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.Graph.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.Identity.Client.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.Owin.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.Owin.Security.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.Owin.Security.OpenIdConnect.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Newtonsoft.Json.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Owin.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Rotativa.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Buffers.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Memory.Data.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Memory.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Net.Http.WinHttpHandler.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Numerics.Vectors.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Text.Encodings.Web.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Text.Json.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.ValueTuple.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Web.Helpers.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Web.Mvc.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Web.Optimization.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Web.Razor.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Web.WebPages.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\WebGrease.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Azure.Core.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\EntityFramework.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\EntityFramework.SqlServer.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\MailSenders.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.Graph.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.Graph.Core.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.Identity.Client.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Abstractions.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Protocols.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Buffers.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Memory.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Memory.Data.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Net.Http.WinHttpHandler.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Numerics.Vectors.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Text.Encodings.Web.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Text.Json.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.ValueTuple.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Web.Helpers.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Web.Mvc.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Web.Optimization.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Web.Razor.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Web.WebPages.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Newtonsoft.Json.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Antlr3.Runtime.pdb
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.Owin.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.Owin.Security.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.Owin.Security.OpenIdConnect.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\es\System.Web.Razor.resources.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\obj\Debug\CNLCI.csproj.AssemblyReference.cache
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\obj\Debug\CNLCI.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\obj\Debug\CNLCI.csproj.CopyComplete
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\obj\Debug\CNLCI.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas\CNLCI\obj\Debug\CNLCI.pdb
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\CNLCI.dll.config
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\CNLCI.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\CNLCI.pdb
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\csc.exe
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\csc.exe.config
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\csc.rsp
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\csi.exe
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\csi.exe.config
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\csi.rsp
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\System.AppContext.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\System.Console.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\System.IO.Compression.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\System.Net.Http.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\System.ValueTuple.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\vbc.exe
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\vbc.exe.config
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\vbc.rsp
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\VBCSCompiler.exe
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Antlr3.Runtime.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Azure.Core.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\EntityFramework.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\EntityFramework.SqlServer.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\MailSenders.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.Graph.Core.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.Graph.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.Identity.Client.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.Owin.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.Owin.Security.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.Owin.Security.OpenIdConnect.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Newtonsoft.Json.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Owin.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Rotativa.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Buffers.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Memory.Data.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Memory.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Net.Http.WinHttpHandler.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Numerics.Vectors.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Text.Encodings.Web.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Text.Json.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.ValueTuple.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Web.Helpers.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Web.Mvc.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Web.Optimization.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Web.Razor.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Web.WebPages.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\WebGrease.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Azure.Core.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\EntityFramework.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\EntityFramework.SqlServer.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\MailSenders.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.Graph.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.Graph.Core.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.Identity.Client.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.IdentityModel.Abstractions.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.IdentityModel.Protocols.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Buffers.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Memory.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Memory.Data.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Net.Http.WinHttpHandler.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Numerics.Vectors.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Text.Encodings.Web.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Text.Json.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.ValueTuple.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Web.Helpers.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Web.Mvc.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Web.Optimization.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Web.Razor.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Web.WebPages.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Newtonsoft.Json.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Antlr3.Runtime.pdb
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.Owin.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.Owin.Security.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.Owin.Security.OpenIdConnect.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\es\System.Web.Razor.resources.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\obj\Debug\CNLCI.csproj.AssemblyReference.cache
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\obj\Debug\CNLCI.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\obj\Debug\CNLCI.csproj.CopyComplete
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\obj\Debug\CNLCI.dll
+C:\Users\Administrador\Documents\CNLCI - CGraficas - copia\CNLCI\obj\Debug\CNLCI.pdb
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\CNLCI.dll.config
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\CNLCI.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\CNLCI.pdb
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\csc.exe
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\csc.exe.config
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\csc.rsp
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\csi.exe
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\csi.exe.config
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\csi.rsp
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\System.AppContext.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\System.Console.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\System.IO.Compression.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\System.Net.Http.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\System.Net.Sockets.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\System.ValueTuple.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\System.Xml.XPath.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\vbc.exe
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\vbc.exe.config
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\vbc.rsp
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\VBCSCompiler.exe
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Antlr3.Runtime.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Azure.Core.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\EntityFramework.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\EntityFramework.SqlServer.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\MailSenders.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.Graph.Core.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.Graph.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.Identity.Client.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.IdentityModel.Protocols.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.Owin.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.Owin.Security.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.Owin.Security.OpenIdConnect.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Newtonsoft.Json.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Owin.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Rotativa.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Buffers.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Memory.Data.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Memory.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Net.Http.WinHttpHandler.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Numerics.Vectors.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Text.Encodings.Web.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Text.Json.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.ValueTuple.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Web.Helpers.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Web.Mvc.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Web.Optimization.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Web.Razor.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Web.WebPages.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Web.WebPages.Razor.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\WebGrease.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Azure.Core.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\EntityFramework.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\EntityFramework.SqlServer.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\MailSenders.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.Graph.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.Graph.Core.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.Identity.Client.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.IdentityModel.Abstractions.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.IdentityModel.Protocols.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Buffers.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Memory.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Memory.Data.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Net.Http.WinHttpHandler.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Numerics.Vectors.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Text.Encodings.Web.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Text.Json.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.ValueTuple.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Web.Helpers.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Web.Mvc.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Web.Optimization.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Web.Razor.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Web.WebPages.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\System.Web.WebPages.Razor.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Newtonsoft.Json.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Antlr3.Runtime.pdb
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.Owin.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.Owin.Security.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.Owin.Security.OpenIdConnect.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\es\System.Web.Helpers.resources.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\es\System.Web.Mvc.resources.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\es\System.Web.Optimization.resources.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\es\System.Web.Razor.resources.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\es\System.Web.WebPages.resources.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\obj\Debug\CNLCI.csproj.AssemblyReference.cache
+C:\Users\User\Source\Repos\CNLCI\CNLCI\obj\Debug\CNLCI.csproj.CoreCompileInputs.cache
+C:\Users\User\Source\Repos\CNLCI\CNLCI\obj\Debug\CNLCI.csproj.Up2Date
+C:\Users\User\Source\Repos\CNLCI\CNLCI\obj\Debug\CNLCI.dll
+C:\Users\User\Source\Repos\CNLCI\CNLCI\obj\Debug\CNLCI.pdb
+C:\Users\User\source\repos\CNLCI\CNLCI\bin\Models\CNL.tt
+C:\Users\User\source\repos\CNLCI\CNLCI\bin\Models\Alumno.cs
+C:\Users\User\source\repos\CNLCI\CNLCI\bin\Models\bitacora.cs
+C:\Users\User\source\repos\CNLCI\CNLCI\bin\Models\Carrera.cs
+C:\Users\User\source\repos\CNLCI\CNLCI\bin\Models\CNL.cs
+C:\Users\User\source\repos\CNLCI\CNLCI\bin\Models\Grupo.cs
+C:\Users\User\source\repos\CNLCI\CNLCI\bin\Models\Ingreso.cs
+C:\Users\User\source\repos\CNLCI\CNLCI\bin\Models\Justificante.cs
+C:\Users\User\source\repos\CNLCI\CNLCI\bin\Models\Medico.cs
+C:\Users\User\source\repos\CNLCI\CNLCI\bin\Models\Pase_de_salida.cs
+C:\Users\User\source\repos\CNLCI\CNLCI\bin\Models\RAJ_Result.cs
+C:\Users\User\source\repos\CNLCI\CNLCI\bin\Models\RCJ_Result.cs
+C:\Users\User\source\repos\CNLCI\CNLCI\bin\Models\RGJ_Result.cs
+C:\Users\User\source\repos\CNLCI\CNLCI\bin\Models\RMJ_Result.cs
+C:\Users\User\source\repos\CNLCI\CNLCI\bin\Models\Tutor.cs
+C:\Users\User\source\repos\CNLCI\CNLCI\bin\Models\Usuarios.cs

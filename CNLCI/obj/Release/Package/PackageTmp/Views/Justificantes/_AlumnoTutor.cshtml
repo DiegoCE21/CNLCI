@@ -1,0 +1,160 @@
+﻿@model IEnumerable<CNLCI.Models.ViewModel.MJ>
+
+@foreach (var datos in Model)
+{
+    <div class="container">
+        <div class="Marco">
+            <div class="columns ">
+                <div class="column is-half">
+                    <div class="field">
+
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Nombre(s)" value="@datos.Nombre" readonly name="Nombre" id="IDNOMBRE"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="field">
+
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Apellido paterno" value="@datos.Primer_apellido" readonly name="Primer_apellido" id="IDAPELLIDOP">
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="field">
+
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Apellido materno" value="@datos.Segundo_apellido" readonly name="Segundo_apellido" id="IDAPELLIDOS">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-one-quarter">
+                    <div class="field">
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Matrícula" value="@datos.Matricula" readonly name="Matricula" id="MATRICULA">
+                        </div>
+                    </div>
+                </div>
+
+
+                @Html.Partial("_Carrera")
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="Marco">
+            <div class="columns">
+
+                @Html.Partial("_Motivo")
+                @Html.Partial("_Autoriza")
+
+            </div>
+        </div>
+    </div>
+   
+
+
+    <div class="container">
+        <div class="Marco">
+            <div class="field is-horizontal">
+                <div class="field-label is-normal is-flex is-align-items-center">
+                    <label class="label">Autorizó</label>
+                </div>
+                <div class="field-body has-addons-centered">
+                    <div class="column">
+                        <div class="field">
+                            <div class="control">
+
+                                <label class="radio">
+                                    <input type="radio" name="autorizo" value="Tutor" onclick="habilitarRegistrado()" checked>
+                                    <b>Tutor</b>
+
+
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control">
+                                <input class="input" type="text" id="TutorN" name="TutorN" readonly placeholder="Nombre del tutor" value="@datos.Tutor_Nombre" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="field">
+                            <div class="control">
+                                <label class="radio">
+                                    <input type="radio" name="autorizo" value="externo" onclick="habilitarOtro()">
+                                    <b>Externo</b>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="field is-horizontal" id="otroFields">
+
+                            <div class="field">
+
+                                <div class="control">
+
+                                    <div class="select" style=" width: 100%" disabled>
+                                        <select id="parentezco" name="parentezco">
+
+                                            <option value="" style="display: none;">Seleccionar parentezco </option>
+                                            <option value="PADRE">Padre</option>
+                                            <option value="MADRE">Madre</option>
+                                            <option value="ABUELO(A)">Abuelo(a)</option>
+                                            <option value="TIO(A)">Tio(a)</option>
+                                            <option value="SIN PARENTEZCO">Sin parentezco</option>
+
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <br />
+                            <div class="field">
+                                <div class="control">
+                                    <input class="input" type="text" id="nombreA" name="nombreA" disabled placeholder="Nombre completo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" >
+        <div class="Marco">
+            <div class="field is-horizontal">
+                <div class="field-label is-flex">
+                    <div class="column is-2-4">
+                        <center>
+                            <label class="label">Seleccionar archivo como comprobante</label>
+                            <br />
+                            <br />
+                            <input type="file" name="archivo" id="archivo" accept="application/pdf">
+                        </center>
+                    </div>
+                    <div class="column is-2-4">
+                        <center> <label class="label">Observaciones</label></center>
+                        <div class="file is-primary has-name">
+                            
+                                <textarea class="textarea is-primary" name="Observaciones" id="Observaciones" rows="4"></textarea>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
+
+
+
+

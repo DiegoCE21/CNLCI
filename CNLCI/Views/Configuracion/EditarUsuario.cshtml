@@ -1,0 +1,20 @@
+@model CNLCI.Models.Usuarios
+
+@{
+    ViewBag.Title = "Editar Usuario";
+}
+
+<h2>Editar Usuario</h2>
+
+@using (Html.BeginForm())
+{
+@Html.HiddenFor(model => model.IdUsuario)
+
+<div class="form-group">
+    @Html.LabelFor(model => model.Correo, new { @class = "control-label" })
+    @Html.EditorFor(model => model.Correo)
+    @Html.ValidationMessageFor(model => model.Correo)
+</div>
+
+<button type="submit" class="btn btn-primary">Guardar cambios</button>
+}

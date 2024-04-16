@@ -1,0 +1,175 @@
+﻿@model IEnumerable<CNLCI.Models.Alumno>
+
+@foreach (var datos in Model)
+{
+    <div class="container">
+        <div class="Marco">
+            <div class="columns ">
+                <div class="column is-half">
+                    <div class="field">
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Nombre(s)" value="@datos.Nombre" readonly name="Nombre" id="IDNOMBRE" />
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="field">
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Apellido paterno" value="@datos.Primer_apellido" readonly name="Primer_apellido" id="IDAPELLIDOP">
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="field">
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Apellido materno" value="@datos.Segundo_apellido" readonly name="Segundo_apellido" id="IDAPELLIDOS">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-one-quarter">
+                    <div class="field">
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Matrícula" value="@datos.Matricula" readonly name="Matricula" id="MATRICULA">
+                            <p>El alumno cuenta con @datos.NumJustificantes justificantes</p>
+                        </div>
+                    </div>
+                </div>
+                @* Aquí se carga el partial "_Carrera" *@
+                @Html.Partial("_Carrera")
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="Marco">
+            <div class="columns">
+                @* Aquí se carga el partial "_Motivo" *@
+                @Html.Partial("_Motivo")
+                <div class="column is-2-4">
+                    <div class="column">
+                        <div class="control">
+                            <div style=" width: 100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="text-align: left;">
+        <div class="Marco">
+            <div class="field is-horizontal">
+                <div class="field-label is-normal is-flex is-align-items-center">
+                    <label class="label">Fecha</label>
+                </div>
+                <div class="field-body has-addons-centered">
+                    <div class="column">
+                        <div class="field">
+                            <div class="control">
+                                <label class="radio">
+                                    <input type="radio" name="fecha" value="unica" onclick="habilitarFecha()" checked>
+                                    <b>Única</b>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <input class="input" type="date" id="fecha1" name="fecha1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="field">
+                            <div class="control">
+                                <label class="radio">
+                                    <input type="radio" name="fecha" value="extendida" onclick="habilitarExtendida()">
+                                    <b>Extendida</b>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="field is-horizontal" id="extendidaFields">
+        _--                    <div class="field">
+                                <div class="control">
+                                    <label class="label">Del día</label>
+                                    <input class="input" type="date" id="fechaDelDia" name="fechaDelDia" disabled>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <label class="label">Al día</label>
+                                    <input class="input" type="date" id="fechaAlDia" name="fechaAlDia" disabled>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="Marco">
+            <div class="field is-horizontal">
+                <div class="field-label is-flex">
+                    <div class="column is-2-4">
+                        <center>
+                            <label class="label">Seleccionar archivo como comprobante</label>
+                            <br />
+                            <br />
+                            <input type="file" name="archivo" id="archivo" accept="application/pdf">
+                        </center>
+                    </div>
+                    <div class="column is-2-4">
+                        <center> <label class="label">Observaciones</label></center>
+                        <div class="file is-primary has-name">
+                            <textarea class="textarea is-primary" name="Observaciones" rows="4" id="Observaciones"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón para abrir el modal -->
+    <div class="container">
+        <button class="button is-info" onclick="mostrarModal()" type="button">Ver Reporte Por Alumno</button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modalReporte">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Reporte Por Alumno</p>
+                <button class="delete" aria-label="close" onclick="cerrarModal()"></button>
+            </header>
+            <section class="modal-card-body">
+                <!-- Aquí se mostrará el contenido del reporte -->
+                <!-- Puedes cargar el contenido dinámicamente con JavaScript -->
+                <iframe id="iframeReporte" src="" style="width: 100%; height: 500px; border: none;"></iframe>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button" onclick="cerrarModal()">Cerrar</button>
+            </footer>
+        </div>
+    </div>
+}
+
+<!-- JavaScript para controlar el modal -->
+<script>
+    // Función para mostrar el modal y cargar el contenido del reporte
+    function mostrarModal() {
+        var url = "/CNLCI/Reportes/PorAlumnoModal";
+        var iframe = document.getElementById("iframeReporte");
+        iframe.src = url;
+        document.getElementById("modalReporte").classList.add("is-active");
+    }
+
+    // Función para cerrar el modal
+    function cerrarModal() {
+        document.getElementById("modalReporte").classList.remove("is-active");
+    }
+</script>

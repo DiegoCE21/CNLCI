@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CONALEPcheckinModelStoreContainer" CdmEntityContainer="DB">
+    <EntitySetMapping Name="Alumno">
+      <EntityTypeMapping TypeName="CONALEPcheckinModel.Alumno">
+        <MappingFragment StoreEntitySet="Alumno">
+          <ScalarProperty Name="Semestre" ColumnName="Semestre" />
+          <ScalarProperty Name="Matricula" ColumnName="Matricula" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Primer_apellido" ColumnName="Primer apellido" />
+          <ScalarProperty Name="Segundo_apellido" ColumnName="Segundo apellido" />
+          <ScalarProperty Name="Email_institucional" ColumnName="Email institucional" />
+          <ScalarProperty Name="CURP" ColumnName="CURP" />
+          <ScalarProperty Name="Dom_Colonia" ColumnName="Dom Colonia" />
+          <ScalarProperty Name="Cd__Localidad" ColumnName="Cd./Localidad" />
+          <ScalarProperty Name="Dom_CP" ColumnName="Dom CP" />
+          <ScalarProperty Name="Dom_Ciudad" ColumnName="Dom Ciudad" />
+          <ScalarProperty Name="Dom_Ent_Fed" ColumnName="Dom Ent Fed" />
+          <ScalarProperty Name="Periodo_Escolar_Inicio" ColumnName="Periodo Escolar Inicio" />
+          <ScalarProperty Name="Calle" ColumnName="Calle" />
+          <ScalarProperty Name="Municipio" ColumnName="Municipio" />
+          <ScalarProperty Name="Tel_Celular" ColumnName="Tel Celular" />
+          <ScalarProperty Name="Teléfono" ColumnName="Teléfono" />
+          <ScalarProperty Name="E_mail" ColumnName="E-mail" />
+          <ScalarProperty Name="Plan_de_Estudios" ColumnName="Plan de Estudios" />
+          <ScalarProperty Name="Grupo_Referente" ColumnName="Grupo Referente" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bitacora">
+      <EntityTypeMapping TypeName="CONALEPcheckinModel.bitacora">
+        <MappingFragment StoreEntitySet="bitacora">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="accion" ColumnName="accion" />
+          <ScalarProperty Name="realizada_por" ColumnName="realizada_por" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="tabla" ColumnName="tabla" />
+          <ScalarProperty Name="folio" ColumnName="folio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Carrera">
+      <EntityTypeMapping TypeName="CONALEPcheckinModel.Carrera">
+        <MappingFragment StoreEntitySet="Carrera">
+          <ScalarProperty Name="Plan_de_Estudios_Cve" ColumnName="Plan de Estudios Cve" />
+          <ScalarProperty Name="Plan_de_Estudios" ColumnName="Plan de Estudios" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Grupo">
+      <EntityTypeMapping TypeName="CONALEPcheckinModel.Grupo">
+        <MappingFragment StoreEntitySet="Grupo">
+          <ScalarProperty Name="Plan_de_Estudios_Cve" ColumnName="Plan de Estudios Cve" />
+          <ScalarProperty Name="Grupo_Referente" ColumnName="Grupo Referente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Justificante">
+      <EntityTypeMapping TypeName="CONALEPcheckinModel.Justificante">
+        <MappingFragment StoreEntitySet="Justificante">
+          <ScalarProperty Name="No__justificante" ColumnName="No. justificante" />
+          <ScalarProperty Name="Matricula" ColumnName="Matricula" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Primer_apellido" ColumnName="Primer apellido" />
+          <ScalarProperty Name="Segundo_apellido" ColumnName="Segundo apellido" />
+          <ScalarProperty Name="Plan_de_Estudios" ColumnName="Plan de Estudios" />
+          <ScalarProperty Name="Grupo_Referente" ColumnName="Grupo Referente" />
+          <ScalarProperty Name="Motivo" ColumnName="Motivo" />
+          <ScalarProperty Name="Comprobante" ColumnName="Comprobante" />
+          <ScalarProperty Name="Fecha_del_dia" ColumnName="Fecha del dia" />
+          <ScalarProperty Name="Fecha_al_dia" ColumnName="Fecha al dia" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+          <ScalarProperty Name="ElaboradoPor" ColumnName="ElaboradoPor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Medico">
+      <EntityTypeMapping TypeName="CONALEPcheckinModel.Medico">
+        <MappingFragment StoreEntitySet="Medico">
+          <ScalarProperty Name="Matricula" ColumnName="Matricula" />
+          <ScalarProperty Name="Médico_Cv_Filiación" ColumnName="Médico Cv Filiación" />
+          <ScalarProperty Name="Médico_Institución_Médica" ColumnName="Médico Institución Médica" />
+          <ScalarProperty Name="Médico_No_U_de_Salud" ColumnName="Médico No U.de Salud" />
+          <ScalarProperty Name="Médico_Unidad_de_Salud" ColumnName="Médico Unidad de Salud" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pase_de_salida">
+      <EntityTypeMapping TypeName="CONALEPcheckinModel.Pase_de_salida">
+        <MappingFragment StoreEntitySet="Pase de salida">
+          <ScalarProperty Name="No__pase" ColumnName="No. pase" />
+          <ScalarProperty Name="Matricula" ColumnName="Matricula" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Primer_apellido" ColumnName="Primer apellido" />
+          <ScalarProperty Name="Segundo_apellido" ColumnName="Segundo apellido" />
+          <ScalarProperty Name="Plan_de_Estudios" ColumnName="Plan de Estudios" />
+          <ScalarProperty Name="Grupo_Referente" ColumnName="Grupo Referente" />
+          <ScalarProperty Name="Motivo" ColumnName="Motivo" />
+          <ScalarProperty Name="Autoriza" ColumnName="Autoriza" />
+          <ScalarProperty Name="Parentezco" ColumnName="Parentezco" />
+          <ScalarProperty Name="Medio_de_Autorizacion" ColumnName="Medio de Autorizacion" />
+          <ScalarProperty Name="Comprobante" ColumnName="Comprobante" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+          <ScalarProperty Name="ElaboradoPor" ColumnName="ElaboradoPor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tutor">
+      <EntityTypeMapping TypeName="CONALEPcheckinModel.Tutor">
+        <MappingFragment StoreEntitySet="Tutor">
+          <ScalarProperty Name="Matricula" ColumnName="Matricula" />
+          <ScalarProperty Name="Tutor_Nombre" ColumnName="Tutor Nombre" />
+          <ScalarProperty Name="Tutor_celular" ColumnName="Tutor celular" />
+          <ScalarProperty Name="Tutor_correo" ColumnName="Tutor correo" />
+          <ScalarProperty Name="Tutor_telefono" ColumnName="Tutor telefono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ingreso">
+      <EntityTypeMapping TypeName="CONALEPcheckinModel.Ingreso">
+        <MappingFragment StoreEntitySet="Ingreso">
+          <ScalarProperty Name="Matricula" ColumnName="Matricula" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Primer_apellido" ColumnName="Primer apellido" />
+          <ScalarProperty Name="Segundo_apellido" ColumnName="Segundo apellido" />
+          <ScalarProperty Name="Email_institucional" ColumnName="Email institucional" />
+          <ScalarProperty Name="CURP" ColumnName="CURP" />
+          <ScalarProperty Name="Plan_de_Estudios_Cve" ColumnName="Plan de Estudios Cve" />
+          <ScalarProperty Name="Plan_de_Estudios" ColumnName="Plan de Estudios" />
+          <ScalarProperty Name="Médico_Cv_Filiación" ColumnName="Médico Cv Filiación" />
+          <ScalarProperty Name="Médico_Institución_Médica" ColumnName="Médico Institución Médica" />
+          <ScalarProperty Name="Médico_No_U_de_Salud" ColumnName="Médico No U.de Salud" />
+          <ScalarProperty Name="Grupo_Referente" ColumnName="Grupo Referente" />
+          <ScalarProperty Name="Médico_Unidad_de_Salud" ColumnName="Médico Unidad de Salud" />
+          <ScalarProperty Name="Dom_Colonia" ColumnName="Dom Colonia" />
+          <ScalarProperty Name="Cd__Localidad" ColumnName="Cd./Localidad" />
+          <ScalarProperty Name="Dom_CP" ColumnName="Dom CP" />
+          <ScalarProperty Name="Dom_Ciudad" ColumnName="Dom Ciudad" />
+          <ScalarProperty Name="Dom_Ent_Fed" ColumnName="Dom Ent Fed" />
+          <ScalarProperty Name="Periodo_Escolar_Inicio" ColumnName="Periodo Escolar Inicio" />
+          <ScalarProperty Name="Calle" ColumnName="Calle" />
+          <ScalarProperty Name="Municipio" ColumnName="Municipio" />
+          <ScalarProperty Name="Tel_Celular" ColumnName="Tel Celular" />
+          <ScalarProperty Name="E_mail" ColumnName="E-mail" />
+          <ScalarProperty Name="Tutor_Nombre" ColumnName="Tutor Nombre" />
+          <ScalarProperty Name="Tutor_celular" ColumnName="Tutor celular" />
+          <ScalarProperty Name="Teléfono" ColumnName="Teléfono" />
+          <ScalarProperty Name="Tutor_correo" ColumnName="Tutor correo" />
+          <ScalarProperty Name="Tutor_telefono" ColumnName="Tutor telefono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Activar" FunctionName="CONALEPcheckinModel.Store.Activar" />
+    <FunctionImportMapping FunctionImportName="copias" FunctionName="CONALEPcheckinModel.Store.copias" />
+    <FunctionImportMapping FunctionImportName="Desactivar" FunctionName="CONALEPcheckinModel.Store.Desactivar" />
+    <FunctionImportMapping FunctionImportName="importar" FunctionName="CONALEPcheckinModel.Store.importar" />
+    <FunctionImportMapping FunctionImportName="RAJ" FunctionName="CONALEPcheckinModel.Store.RAJ">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CONALEPcheckinModel.RAJ_Result">
+          <ScalarProperty Name="Mes" ColumnName="Mes" />
+          <ScalarProperty Name="MesNombre" ColumnName="MesNombre" />
+          <ScalarProperty Name="Año" ColumnName="Año" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="RCJ" FunctionName="CONALEPcheckinModel.Store.RCJ">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CONALEPcheckinModel.RCJ_Result">
+          <ScalarProperty Name="Plan_de_Estudios" ColumnName="Plan de Estudios" />
+          <ScalarProperty Name="Mes" ColumnName="Mes" />
+          <ScalarProperty Name="MesNombre" ColumnName="MesNombre" />
+          <ScalarProperty Name="Año" ColumnName="Año" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="RGJ" FunctionName="CONALEPcheckinModel.Store.RGJ">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CONALEPcheckinModel.RGJ_Result">
+          <ScalarProperty Name="Grupo_Referente" ColumnName="Grupo Referente" />
+          <ScalarProperty Name="Mes" ColumnName="Mes" />
+          <ScalarProperty Name="MesNombre" ColumnName="MesNombre" />
+          <ScalarProperty Name="Año" ColumnName="Año" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="RMJ" FunctionName="CONALEPcheckinModel.Store.RMJ">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CONALEPcheckinModel.RMJ_Result">
+          <ScalarProperty Name="Motivo" ColumnName="Motivo" />
+          <ScalarProperty Name="Mes" ColumnName="Mes" />
+          <ScalarProperty Name="MesNombre" ColumnName="MesNombre" />
+          <ScalarProperty Name="Año" ColumnName="Año" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="CONALEPcheckinModel.Usuarios">
+        <MappingFragment StoreEntitySet="Usuarios">
+          <ScalarProperty Name="tipoAcceso" ColumnName="tipoAcceso" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Docente">
+      <EntityTypeMapping TypeName="CONALEPcheckinModel.Docente">
+        <MappingFragment StoreEntitySet="Docente">
+          <ScalarProperty Name="CorreoDocente" ColumnName="CorreoDocente" />
+          <ScalarProperty Name="RFC" ColumnName="RFC" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="DocenteID" ColumnName="DocenteID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Materias">
+      <EntityTypeMapping TypeName="CONALEPcheckinModel.Materias">
+        <MappingFragment StoreEntitySet="Materias">
+          <ScalarProperty Name="RFC" ColumnName="RFC" />
+          <ScalarProperty Name="DocenteID" ColumnName="DocenteID" />
+          <ScalarProperty Name="Periodo" ColumnName="Periodo" />
+          <ScalarProperty Name="Grupo" ColumnName="Grupo" />
+          <ScalarProperty Name="Alumno" ColumnName="Alumno" />
+          <ScalarProperty Name="Clave" ColumnName="Clave" />
+          <ScalarProperty Name="MateriasID" ColumnName="MateriasID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JustificantesVistos">
+      <EntityTypeMapping TypeName="CONALEPcheckinModel.JustificantesVistos">
+        <MappingFragment StoreEntitySet="JustificantesVistos">
+          <ScalarProperty Name="Visto" ColumnName="Visto" />
+          <ScalarProperty Name="FechaVisto" ColumnName="FechaVisto" />
+          <ScalarProperty Name="DocenteID" ColumnName="DocenteID" />
+          <ScalarProperty Name="JustificanteID" ColumnName="JustificanteID" />
+          <ScalarProperty Name="JustificanteVistoID" ColumnName="JustificanteVistoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,228 @@
+﻿
+@{
+    ViewBag.Title = "View";
+}
+
+<main>
+
+    <div class="container Marco">
+        <div style="margin-bottom: 20px;">
+            <center>
+                <h1 class="title">Nuevo pase de salida</h1>
+            </center>
+        </div>
+        @using (Html.BeginForm("BuscarP", "Justificantes", FormMethod.Post, new { onsubmit = "return validarMatricula();" }))
+        {
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Alumno</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <p class="control is-expanded">
+                            <input class="input" type="text" name="matricula" placeholder="Escribe la matrícula" maxlength="11" id="txtmatricula">
+                        </p>
+                    </div>
+                    <div class="field">
+                        <p class="control">
+                            <button type="submit" class="button button-link is-link">Buscar</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        }
+
+        @*@using (Html.BeginForm("GenerarP", "Justificantes", FormMethod.Post, new { onsubmit = "return validarDatos();", onsubmitComplete = "", @class = "este", enctype = "multipart/form-data", target = "_blank"}))*@
+        @using (Html.BeginForm(null, null, FormMethod.Post, new { @class = "este", enctype = "multipart/form-data" }))
+        {@Html.Partial("_AlumnoTutor")
+
+
+        <div class="field is-grouped is-grouped-centered">
+            <p class="control">
+                <button type="reset" class="button is-danger">Limpiar</button>
+            </p>
+            <p class="control">
+                <button type="button" class="button is-primary" onclick="validarDatos()">Generar</button>
+            </p>
+
+        </div>
+    }
+
+
+
+
+
+
+    <div class="modal" id="PDF" style="width: 50%; margin: auto; text-align: center;">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body" id="cuerpo">
+
+                </div>
+                <div class="modal-footer">
+                    <h2>Se ha generado el pase de salida para el alumno</h2>
+                    <button class="btn btn-danger" data-dismiss="modal" onclick="recargar()">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    </div>
+</main>
+
+<script>
+    document.getElementById('otroFields').style.display = 'block';
+    document.getElementById('parentezco').disabled = true;
+    document.getElementById('nombreA').disabled = true;
+
+    function recargar() { window.location.href = '/CNLCI/Historial/PaseS'; }
+
+    function habilitarRegistrado() {
+        document.getElementById('TutorN').disabled = false;
+        document.getElementById('otroFields').style.display = 'block';
+        document.getElementById('parentezco').disabled = true;
+        document.getElementById('nombreA').disabled = true;
+    }
+
+    function habilitarOtro() {
+        document.getElementById('TutorN').disabled = true;
+        document.getElementById('otroFields').style.display = 'block';
+        document.getElementById('parentezco').disabled = false;
+        document.getElementById('nombreA').disabled = false;
+    }
+
+    function validarMatricula() {
+        var matricula = document.getElementById("txtmatricula").value;
+        if (matricula.trim() === "") {
+            alert("Debes ingresar la matrícula del alumno a buscar.");
+            return false;
+        }
+        return true;
+    }
+
+    function validarDatos() {
+
+        var alerta = "Debes especificar: \n";
+        var numa = 0;
+        var nombre = document.getElementById("IDNOMBRE").value;
+        if (nombre === "Nombre(s)") {
+            alert("Es necesario especificar un alumno válido.\n \nPara ello, ingrese una matrícula en la barra de búsqueda superior y presione el botón Buscar");
+            return false;
+        }
+        var carrera = document.getElementById("IDCARRERA").value;
+        var grupo = document.getElementById("IDGRUPO").value;
+        var motivo = document.getElementById("Motivo").value;
+        var medio = document.getElementById("Medio").value;
+        var Paut = document.getElementById("parentezco").value;
+        var Nau = document.getElementById("nombreA").value;
+        var Rau = document.getElementById("TutorN").value;
+
+        if (carrera === "") {
+            alerta += "-Carrera\n";
+            numa += 1;
+        }
+        if (grupo.trim() === "") {
+            alerta += "-Grupo\n";
+            numa += 1;
+        }
+        if (motivo.trim() === "") {
+            alerta += "-Motivo\n";
+            numa += 1;
+        }
+        if (medio.trim() === "") {
+            alerta += "-Medio de autorización\n";
+            numa += 1;
+
+        }
+        if (Rau.trim() === "" && Nau.trim() === "") {
+            alerta += "-Quién autoriza\n";
+            numa += 1;
+            if (Paut.trim() === "") {
+                alerta += "-Parentezco con el alumno de quién autoriza\n";
+                numa += 1;
+            }
+        }
+
+        if (numa > 0) {
+            alert(alerta);
+
+        } else { $('#PDF').modal('show'); Generar(); }
+    }
+
+    function Generar() {
+
+        var Nombre = document.getElementById("IDNOMBRE").value;
+        var Primer_apellido = document.getElementById("IDAPELLIDOP").value;
+        var Segundo_Apellido = document.getElementById("IDAPELLIDOS").value;
+        var Matricula = document.getElementById("MATRICULA").value;
+        var Carrera = document.getElementById("IDCARRERA").value;
+        var Grupo = document.getElementById("IDGRUPO").value;
+        var Motivo = document.getElementById("Motivo").value;
+        var Tautorizo = document.getElementsByName("autorizo");
+
+        for (var i = 0; i < Tautorizo.length; i++) {
+            if (Tautorizo[i].checked) {
+            var autorizo = Tautorizo[i].value;
+        }
+    }
+        var parentezco = document.getElementById("parentezco").value;
+        var Medio = document.getElementById("Medio").value;
+        var nombreA = document.getElementById("nombreA").value;
+    var Observaciones = document.getElementById("Observaciones").value;
+        
+        var TutorN = document.getElementById("TutorN").value;
+
+        var formData = new FormData();
+        formData.append('Nombre', Nombre);
+        formData.append('Primer_apellido', Primer_apellido);
+        formData.append('Segundo_Apellido', Segundo_Apellido);
+        formData.append('Matricula', Matricula);
+        formData.append('Carrera', Carrera);
+        formData.append('Grupo', Grupo);
+        formData.append('Motivo', Motivo);
+        formData.append('autorizo', autorizo);
+        formData.append('parentezco', parentezco);
+        formData.append('Medio', Medio);
+        formData.append('nombreA', nombreA);
+        formData.append('Observaciones', Observaciones);
+        formData.append('archivo', document.getElementById("archivo").files[0]);
+        formData.append('TutorN', TutorN);
+
+     fetch('@Url.Action("GenerarP", "Justificantes")', {
+        method: 'POST',
+        body: formData 
+    })
+    .then(response => response.json())
+        .then(data => {
+            console.log(data);
+
+            var cuerpoDiv = document.getElementById('cuerpo');
+            var divExternalFiles = document.createElement('div');
+            divExternalFiles.className = 'ExternalFiles';
+            var iframe = document.createElement('iframe');
+            iframe.src = data;
+            iframe.width = "500";
+            iframe.height = "300";
+            divExternalFiles.appendChild(iframe);
+            cuerpoDiv.appendChild(divExternalFiles);
+        })
+    .catch(error => {
+        console.error("Error:", error);
+    });
+}
+
+    $(document).ready(function () {
+        $('#nombreA').on('input', function () {
+            $(this).val($(this).val().toUpperCase());
+        });
+    });
+
+</script>
+
+
+
+
+

@@ -1,0 +1,37 @@
+@model IEnumerable<CNLCI.Models.Grupo>
+@using System.Linq
+
+<div class="container" style="display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 250px; padding: 10px;">
+        <label for="IDCARRERA" class="label">Carrera</label>
+        @if (ViewBag.PlanesDeEstudio != null)
+        {
+            var planesDeEstudio = ViewBag.PlanesDeEstudio as SelectList;
+            if (planesDeEstudio != null && planesDeEstudio.Any())
+            {
+                @Html.DropDownList("Plan_de_Estudios_Cve", planesDeEstudio, "Seleccione un plan", new { @class = "input", @id = "IDCARRERA", style = "width: 100%;" }) 
+            }
+        }
+        else if (!string.IsNullOrEmpty(ViewBag.PlanDeEstudioSeleccionado))
+        {
+            <input class="input" type="text" value="@ViewBag.PlanDeEstudioSeleccionado" readonly name="PlanDeEstudios" id="IDCARRERA" style="width: 100%;" />
+        }
+    </div>
+
+    <div style="flex: 1; min-width: 250px; padding: 10px;">
+        <label for="IDGRUPO" class="label">Grupo</label>
+        <select class="input" name="Grupo" id="IDGRUPO" style="width: 100%;">
+            @if (ViewBag.Grupos != null && ViewBag.Grupos.Count > 0)
+            {
+                foreach (var grupo in ViewBag.Grupos)
+                {
+                    <option value="@grupo">@grupo</option>
+                }
+            }
+            else
+            {
+                <option value="">No disponible</option>
+            }
+        </select>
+    </div>
+</div>

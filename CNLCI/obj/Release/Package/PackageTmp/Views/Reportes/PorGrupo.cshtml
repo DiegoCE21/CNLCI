@@ -1,0 +1,183 @@
+﻿
+@{
+    ViewBag.Title = "PorGrupo";
+}
+
+
+<main>
+
+
+    <div class="container Marco">
+        <div style="margin-bottom: 20px;">
+            <center>
+                <h1 class="title">   Reporte por grupo</h1>
+            </center>
+        </div>
+        <div class="columns">
+            <div class="column is-one-quarter" style=" height: 25em;">
+                <div class="box">
+                    @using (Html.BeginForm(null, null, FormMethod.Post))
+                    {
+
+                        
+                        <div class="field">
+                            <label class="label">Fecha Inicial</label>
+                            <div class="control">
+                                <input class="input" type="date" name="FI" id="FI">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Fecha Final</label>
+                            <div class="control">
+                                <input class="input" type="date" name="FF" id="FF">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <button type="button" class="button is-primary" onclick="Validar()">Buscar</button>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+            <div class="column este2">
+
+                <div id="chart"></div>
+
+            </div>
+        </div>
+    </div>
+
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<script>
+
+    function Validar() {
+        var numa = 0;
+        
+        var FI = document.getElementById("FI").value;
+        var FF = document.getElementById("FF").value;
+        var alerta = "Debes especificar: \n";
+        if (isNaN(Date.parse(FI)) || isNaN(Date.parse(FF))) {
+            alerta += "-Rango de fecha adecuado\n";
+            numa += 1;
+        }
+        if (numa > 0) {
+            alert(alerta);
+
+        } else { TraerDatos(); }
+
+
+    }
+    function TraerDatos() {
+    
+    var fechaInicial = document.getElementsByName("FI")[0].value;
+    var fechaFinal = document.getElementsByName("FF")[0].value;
+
+
+        fetch('@Url.Action("TraerDatosG", "Reportes")', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ fechaInicial:fechaInicial, fechaFinal:  fechaFinal})
+
+        })
+            .then(response => response.json())
+            .then(data => {
+                var chartElement = document.getElementById('chart');
+                chartElement.innerHTML = '';
+         RAJ(data);
+                console.log(data);
+              })
+            .catch(error => {
+            console.error("Error:", error);
+    });
+}
+
+
+    function RAJ(json) {
+        var data = json;
+        var options = {
+            series: [],
+            chart: {
+                type: 'bar',
+                height: 350,
+               
+            },
+            plotOptions: {
+                bar: {
+                    horizontal: false,
+                    columnWidth: '55%',
+                    endingShape: 'rounded'
+                }
+            },
+            dataLabels: {
+                enabled: false
+            },
+            stroke: {
+                show: true,
+                width: 2,
+                colors: ['transparent']
+            },
+            xaxis: {
+                categories: []
+            },
+            yaxis: {
+                title: {
+                    text: 'Total de justificantes'
+                }
+            },
+            fill: {
+                opacity: 1
+            },
+            title: {
+                text: 'Reporte por grupo',
+                align: 'center',
+                margin: 10,
+                offsetX: 0,
+                offsetY: 0,
+                floating: false,
+                style: {
+                    fontSize: '16px',
+                    fontWeight: 'bold',
+                    fontFamily: undefined,
+                    color: '#263238'
+                },
+            }
+        };
+        var categoriasUnicas = new Set();
+        var titulo = new Set();
+        data.forEach(function (dato) {
+            if (!categoriasUnicas.has(dato.MesNombre+"/"+dato.Año)) {
+                options.xaxis.categories.push(dato.MesNombre + "/" + dato.Año);
+                categoriasUnicas.add(dato.MesNombre + "/" + dato.Año);
+            }
+            var existingSerie = options.series.find(function (serie) {
+                return serie.name === dato.Grupo_Referente;
+            });
+
+            if (!existingSerie) {
+                existingSerie = {
+                    name: dato.Grupo_Referente,
+                    data: []
+                };
+                options.series.push(existingSerie);
+            }
+            var serieData = Array.from({ length: options.xaxis.categories.length }, (_, index) => {
+                return existingSerie.data[index] || 0;
+            });
+            serieData[categoriasUnicas.size - 1] = dato.Total;
+            existingSerie.data = serieData;
+
+
+        });
+
+        console.log(options);
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+    }
+</script>

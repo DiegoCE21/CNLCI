@@ -1,0 +1,107 @@
+﻿@model CNLCI.Models.ViewModel.J
+@{
+    ViewBag.Title = "PDFJustificante";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+            .header img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+            }
+
+        .justificante {
+            font-family: 'Arial Black', sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .info {
+            text-align: right;
+        }
+
+        .left-info {
+            text-align: left;
+            font-size: 20px;
+            // margin-right: 25%;
+        }
+
+        .right-info {
+            text-align: right;
+        }
+
+
+        .ne {
+            font-weight: bold;
+            font-family: 'Arial Black', sans-serif;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="~/Style/assets/conjunto.jpg" alt="Imagen" style=" height: 2cm;">
+    </div>
+    <p class="right-info">Dr. Arroyo, N.L,<span> @System.DateTime.Now </span></p>
+    <br>
+    <p class="left-info">
+        PERSONAL DOCENTE <b>GRUPO <span style="text-decoration: underline;">&emsp;@Model.Grupo_Referente&emsp;</span></b>
+    </p>
+    <p class="left-info">PRESENTE.</p>
+    <br />
+    <br />
+    <br />
+    <p class="left-info" style="text-align: justify;">
+        &emsp;Por este conducto le envió un cordial saludo, a la vez le solicito a usted amablemente justifique la falta del alumno
+        <b> @Model.Nombre @Model.Primer_apellido @Model.Segundo_apellido</b>&emsp;con matrícula <b> @Model.Matricula </b> quien cursa la carrera de
+        <b> @Model.Plan_de_Estudios </b>, ya que no pudo asistir a clases @Html.Partial("_Fecha") por motivo: <b> @Model.Motivo </b>.
+    </p>
+    <p class="left-info" style="text-align: justify;">Agradeciendo le asigne las tareas académicas a desarrollar, con el propósito de evitar el retraso académico. </p>
+    <p class="left-info" style="text-align: justify;">
+        Sin más por el momento y en espera de una respuesta favorable a dicha solicitud, me despido de usted agradeciendo su atención al presente y me pongo a sus ordentes para cualquier duda o aclaración.
+    </p>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <center style="font-size: 20px;">
+        <p>ATENTAMENTE</p>
+        <p><b><i>"Educación técnica para la equidad y el bienestar"</i></b></p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <p> @Model.ElaboradoPor @*Lic. Dulce Liliana Berrones Peña.*@</p>
+        <p> Personal educativo</p>
+
+    </center>
+    <br />
+    <br />
+    <br />
+
+    <br />
+    <br />
+    <br />
+    <br />  <center><p style="color: gray; font-family: 'Century Gothic'; font-weight: bold; font-size: 12px;">José Maria Morelos y Pavón No. 31 y General Bravo, Dr. Arroyo, Nuevo León, C.P. 67900   Tel.(01 488) 888 0176</p></center>
+</body>
+</html>
+
+
+

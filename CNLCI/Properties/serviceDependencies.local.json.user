@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "office365_1": {
+      "restored": true,
+      "restoreTime": "2024-01-07T09:10:21.0138542Z"
+    },
+    "identityapp1": {
+      "restored": true,
+      "restoreTime": "2023-10-18T18:47:23.1489619Z"
+    }
+  },
+  "parameters": {}
+}

@@ -1,0 +1,265 @@
+﻿
+@{
+    ViewBag.Title = "JGrupal";
+}
+
+<main>
+
+
+
+    <div class="container Marco">
+        <div style="margin-bottom: 20px;">
+            <center>
+                <h1 class="title">Nuevo justificante grupal</h1>
+            </center>
+        </div>
+
+
+
+        @*@using (Html.BeginForm("GenerarJ", "Justificantes", FormMethod.Post, new { onsubmit = "return validarDatos();", @class = "este", enctype = "multipart/form-data", target = "_blank" }))*@
+        @using (Html.BeginForm(null, null, FormMethod.Post, new { @class = "este", enctype = "multipart/form-data" }))
+        {
+            <div class="container">
+                <div class="Marco">
+                    <div class="columns">
+                        @Html.Partial("_Carrera")
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="Marco">
+                    <div class="columns">
+                        @Html.Partial("_Motivo")
+                        <div class="column is-2-4">
+                            <div class="column">
+                                <div class="control">
+                                    <div style=" width: 100%">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="text-align: left;">
+                <div class="Marco">
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal is-flex is-align-items-center">
+                            <label class="label">Fecha</label>
+                        </div>
+                        <div class="field-body has-addons-centered">
+                            <div class="column">
+                                <div class="field">
+                                    <div class="control">
+
+                                        <label class="radio">
+                                            <input type="radio" name="fecha" value="unica" onclick="habilitarFecha()" checked id="fecha">
+                                            <b>Única</b>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="control">
+
+                                        <input class="input" type="date" id="fecha1" name="fecha1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="field">
+                                    <div class="control">
+
+                                        <label class="radio">
+                                            <input type="radio" name="fecha" value="extendida" onclick="habilitarExtendida()">
+                                            <b>Extendida</b>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="field is-horizontal" id="extendidaFields">
+                                    <div class="field">
+                                        <div class="control">
+                                            <label class="label">Del día</label>
+
+                                            <input class="input" type="date" id="fechaDelDia" name="fechaDelDia" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="control">
+
+                                            <label class="label">Al día</label>
+                                            <input class="input" type="date" id="fechaAlDia" name="fechaAlDia" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="Marco">
+                    <div class="field is-horizontal">
+                        <div class="field-label is-flex">
+                            <div class="column is-2-4">
+                                <center>
+                                    <label class="label">Seleccionar archivo como comprobante</label>
+                                    <br />
+                                    <br />
+                                    <input type="file" name="archivo" id="archivo" accept="application/pdf">
+                                </center>
+                            </div>
+                            <div class="column is-2-4">
+                                <center> <label class="label">Observaciones</label></center>
+                                <div class="file is-primary has-name">
+
+                                    <textarea class="textarea is-primary" name="Observaciones" rows="4" id="Observaciones"></textarea>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field is-grouped is-grouped-centered">
+                <p class="control">
+                    <button type="reset" class="button is-danger">Limpiar</button>
+                </p>
+                <p class="control">
+                    <button type="button" class="button is-primary" onclick="validarDatos()">Generar</button>
+                </p>
+
+            </div>
+
+
+
+        }
+
+
+
+    </div>
+
+    <div class="modal" id="PDF" style="width: 50%; margin: auto; text-align: center;">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body" id="cuerpo">
+                   
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-dismiss="modal" onclick="recargar()">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script>
+    document.getElementById('extendidaFields').style.display = 'block';
+    document.getElementById('fechaDelDia').disabled = true;
+    document.getElementById('fechaAlDia').disabled = true;
+
+    function recargar() { window.location.href = '/Justificantes/JGrupal'; }
+
+    function habilitarFecha() {
+        document.getElementById('fecha1').disabled = false;
+        document.getElementById('extendidaFields').style.display = 'block';
+        document.getElementById('fechaDelDia').disabled = true;
+        document.getElementById('fechaAlDia').disabled = true;
+    }
+
+    function habilitarExtendida() {
+        document.getElementById('fecha1').disabled = true;
+        document.getElementById('extendidaFields').style.display = 'block';
+        document.getElementById('fechaDelDia').disabled = false;
+        document.getElementById('fechaAlDia').disabled = false;
+    }
+
+    function validarDatos() {
+        var alerta = "Debes especificar: \n";
+        var numa = 0;
+        var carrera = document.getElementById("IDCARRERA").value;
+        var grupo = document.getElementById("IDGRUPO").value;
+        var motivo = document.getElementById("Motivo").value;
+        var fecha1 = document.getElementById("fecha1").value;
+        var fecha2 = document.getElementById("fechaDelDia").value;
+        var fecha3 = document.getElementById("fechaAlDia").value;
+
+        if (carrera === "") {
+            alerta += "-Carrera\n";
+            numa += 1;
+        }
+        if (grupo.trim() === "") {
+            alerta += "-Grupo\n";
+            numa += 1;
+        }
+        if (motivo.trim() === "") {
+            alerta += "-Motivo\n";
+            numa += 1;
+        }
+        if (isNaN(Date.parse(fecha1)) && isNaN(Date.parse(fecha2))) {
+            alerta += "-Fecha\n";
+            numa += 1;
+            if (isNaN(Date.parse(fecha3)) && isNaN(Date.parse(fecha2))) {
+                numa += 1;
+            }
+        }
+
+        if (numa > 0) {
+            alert(alerta);
+        } else {
+            $('#PDF').modal('show');
+            Generar();
+        }
+
+
+    }
+
+    function Generar() { var formData = new FormData();
+formData.append('Carrera', document.getElementById("IDCARRERA").value);
+formData.append('Grupo', document.getElementById("IDGRUPO").value);
+var Motivo1 = document.getElementById("Motivo").value;
+if (Motivo1 === "OTRO") {
+    formData.append('Motivo', document.getElementById("otroMotivo").value);
+} else {
+    formData.append('Motivo', Motivo1);
+}
+var Tfecha = document.getElementsByName("fecha");
+for (var i = 0; i < Tfecha.length; i++) {
+    if (Tfecha[i].checked) {
+        formData.append('fecha', Tfecha[i].value);
+    }
+}
+formData.append('fecha1', document.getElementById("fecha1").value);
+formData.append('fechaDelDia', document.getElementById("fechaDelDia").value);
+formData.append('fechaAlDia', document.getElementById("fechaAlDia").value);
+formData.append('Observaciones', document.getElementById("Observaciones").value);
+formData.append('archivo', document.getElementById("archivo").files[0]);
+
+fetch('@Url.Action("GenerarJG", "Justificantes")', {
+    method: 'POST',
+    body: formData
+})
+        .then(response => response.json())
+            .then(data => {
+                console.log(data);
+
+                var cuerpoDiv = document.getElementById('cuerpo');
+                var divExternalFiles = document.createElement('div');
+                divExternalFiles.className = 'ExternalFiles';
+                var iframe = document.createElement('iframe');
+                iframe.src = data;
+                iframe.width = "500";
+                iframe.height = "300";
+                divExternalFiles.appendChild(iframe);
+                cuerpoDiv.appendChild(divExternalFiles);
+            })
+        .catch(error => {
+            console.error("Error:", error);
+        });
+    }
+</script>
+

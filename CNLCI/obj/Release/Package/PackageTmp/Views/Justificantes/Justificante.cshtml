@@ -1,0 +1,208 @@
+﻿
+@{
+    ViewBag.Title = "Justificante";
+}
+
+<main>
+
+
+
+    <div class="container Marco">
+        <div style="margin-bottom: 20px;">
+            <center>
+                <h1 class="title">Nuevo justificante</h1>
+            </center>
+        </div>
+
+        @using (Html.BeginForm("Buscar", "Justificantes", FormMethod.Post, new { onsubmit = "return validarMatricula();" }))
+        {
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Alumno</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <p class="control is-expanded">
+                            <input class="input" type="text" name="matricula" placeholder="Escribe la matrícula" maxlength="11" id="txtmatricula">
+                        </p>
+                    </div>
+                    <div class="field">
+                        <p class="control">
+                            <button type="submit" class="button button-link is-primary">Buscar</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        }
+
+        @*@using (Html.BeginForm("GenerarJ", "Justificantes", FormMethod.Post, new { onsubmit = "return validarDatos();", @class = "este", enctype = "multipart/form-data", target = "_blank" }))*@
+        @using (Html.BeginForm(null, null, FormMethod.Post, new { @class = "este", enctype = "multipart/form-data", id = "miFormulario" }))
+        {
+            @Html.Partial("_Alumno")
+
+            <div class="field is-grouped is-grouped-centered">
+                <p class="control">
+                    <button type="reset" class="button is-danger">Limpiar</button>
+                </p>
+                <p class="control">
+                    <button type="button" class="button is-primary" onclick="validarDatos()" >Generar</button>
+
+                </p>
+
+            </div>
+
+
+        }
+
+
+
+    </div>
+
+    <div class="modal" id="PDF" style="width: 50%; margin: auto; text-align: center;">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body" id="cuerpo">
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-dismiss="modal" onclick="recargar()">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<script>
+    document.getElementById('extendidaFields').style.display = 'block';
+    document.getElementById('fechaDelDia').disabled = true;
+    document.getElementById('fechaAlDia').disabled = true;
+
+
+    function recargar() { window.location.href = '/Justificantes/Justificante'   ; }
+
+    function habilitarFecha() {
+        document.getElementById('fecha1').disabled = false;
+        document.getElementById('extendidaFields').style.display = 'block';
+        document.getElementById('fechaDelDia').disabled = true;
+        document.getElementById('fechaAlDia').disabled = true;
+    }
+
+    function habilitarExtendida() {
+        document.getElementById('fecha1').disabled = true;
+        document.getElementById('extendidaFields').style.display = 'block';
+        document.getElementById('fechaDelDia').disabled = false;
+        document.getElementById('fechaAlDia').disabled = false;
+    }
+
+    function validarMatricula() {
+        var matricula = document.getElementById("txtmatricula").value;
+        if (matricula.trim() === "") {
+            alert("Debes ingresar la matrícula del alumno a buscar.");
+            return false;
+        }
+        return true;
+    }
+
+    function validarDatos() {
+
+        var alerta = "Debes especificar: \n";
+        var numa = 0;
+        var nombre = document.getElementById("IDNOMBRE").value;
+        if (nombre === "Nombre(s)") {
+            alert("Es necesario especificar un alumno válido.\n \nPara ello, ingrese una matrícula en la barra de búsqueda superior y presione el botón Buscar");
+            return false;
+        }
+
+        var carrera = document.getElementById("IDCARRERA").value;
+        var grupo = document.getElementById("IDGRUPO").value;
+        var motivo = document.getElementById("Motivo").value;
+        var fecha1 = document.getElementById("fecha1").value;
+        var fecha2 = document.getElementById("fechaDelDia").value;
+        var fecha3 = document.getElementById("fechaAlDia").value;
+
+
+        if (carrera === "") {
+            alerta += "-Carrera\n";
+            numa += 1; }
+        if (grupo.trim() === "") {
+            alerta += "-Grupo\n";
+            numa += 1; }
+        if (motivo.trim() === "") {
+            alerta += "-Motivo\n";
+            numa += 1; }
+        if (isNaN(Date.parse(fecha1)) && isNaN(Date.parse(fecha2))) {
+            alerta += "-Fecha\n";
+            numa += 1;
+            if (isNaN(Date.parse(fecha3)) && isNaN(Date.parse(fecha2))) {
+
+                numa += 1;
+                }
+             }
+
+        if (numa > 0) {
+            alert(alerta);
+        } else {
+            $('#PDF').modal('show');
+            Generar();
+        }
+
+
+    }
+
+    function Generar() {
+
+
+        // var formulario = document.getElementById('miFormulario');
+        // var formData = new FormData(formulario);
+
+       var formData = new FormData();
+formData.append('Nombre', document.getElementById("IDNOMBRE").value);
+formData.append('Primer_apellido', document.getElementById("IDAPELLIDOP").value);
+formData.append('Segundo_Apellido', document.getElementById("IDAPELLIDOS").value);
+formData.append('Matricula', document.getElementById("MATRICULA").value);
+formData.append('Carrera', document.getElementById("IDCARRERA").value);
+formData.append('Grupo', document.getElementById("IDGRUPO").value);
+var Motivo1 = document.getElementById("Motivo").value;
+if (Motivo1 === "OTRO") {
+    formData.append('Motivo', document.getElementById("otroMotivo").value);
+} else {
+    formData.append('Motivo', Motivo1);
+}
+var Tfecha = document.getElementsByName("fecha");
+for (var i = 0; i < Tfecha.length; i++) {
+    if (Tfecha[i].checked) {
+        formData.append('fecha', Tfecha[i].value);
+    }
+}
+formData.append('fecha1', document.getElementById("fecha1").value);
+formData.append('fechaDelDia', document.getElementById("fechaDelDia").value);
+formData.append('fechaAlDia', document.getElementById("fechaAlDia").value);
+formData.append('Observaciones', document.getElementById("Observaciones").value);
+formData.append('archivo', document.getElementById("archivo").files[0]);
+
+fetch('@Url.Action("GenerarJ", "Justificantes")', {
+    method: 'POST',
+    body:  formData
+})
+    
+    .then(response => response.json())
+       .then(data => {
+            console.log(data);
+
+            /* var cuerpoDiv = document.getElementById('cuerpo');
+            var divExternalFiles = document.createElement('div');
+            divExternalFiles.className = 'ExternalFiles';
+            var iframe = document.createElement('iframe');
+            iframe.src = data;
+            iframe.width = "500";
+            iframe.height = "300";
+            divExternalFiles.appendChild(iframe);
+            cuerpoDiv.appendChild(divExternalFiles);*/
+        })
+    .catch(error => {
+        console.error("Error:", error);
+    });
+}
+
+</script>

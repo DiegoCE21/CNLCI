@@ -1,0 +1,13 @@
+﻿@if (Model.Fecha_del_dia.ToString().Substring(0, 10) == Model.Fecha_al_dia.ToString().Substring(0, 10))
+{<TEXT>
+
+    el día @Model.Fecha_del_dia.ToString().Substring(0, 10)
+
+</TEXT> }
+else
+{ <TEXT>
+
+los días del<b> @Model.Fecha_del_dia.ToString().Substring(0, 10) al @Model.Fecha_al_dia.ToString().Substring(0, 10) </b>
+
+</TEXT>}
+

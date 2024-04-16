@@ -1,0 +1,51 @@
+﻿<div class="column is-2-4">
+    <div class="column">
+        <div class="control">
+            <div class="select" style=" width: 100%">
+                <select name="Motivo" id="Motivo">
+                    <option value="" style="display: none;">Seleccionar motivo</option>
+                    <option value="ACTIVIDADES EXTRACURRICULARES">Actividades extracurriculares</option>
+                    <option value="CONVOCATORIA LEGAL">Convocatoria legal</option>
+                    <option value="EMERGENCIA FAMILIAR">Emergencia familiar</option>
+                    <option value="ENFERMEDAD FAMILIAR">Enfermedad familiar</option>
+                    <option value="DESASTRE NATURAL">Desastre natural</option>
+                    <option value="MÉDICO">Médico</option>
+                    <option value="PARTICIPACIÓN EN EVENTO CULTURAL">Participación en evento cultural</option>
+                    <option value="PARTICIPACIÓN EN EVENTO DEPORTIVO">Participación en evento deportivo</option>
+                    <option value="PERSONAL">Personal</option>
+                    <option value="PROBLEMAS DE TRANSPORTE">Problemas de transporte</option>
+                    <option value="TRÁMITE OFICIAL">Trámite oficial</option>
+                    <option value="VIAJE EDUCATIVO">Viaje educativo</option>
+                    <option value="OTRO">Otro</option>
+                </select>
+
+
+            </div>
+            <div> <input class="input" type="text" id="otroMotivo" name="otroMotivo" style="display: none;" placeholder="Especificar otro motivo"></div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+
+    $(document).ready(function () {
+        $('#otroMotivo').on('input', function () {
+            $(this).val($(this).val().toUpperCase());
+        });
+    });
+
+
+    const motivoSelect = document.getElementById('Motivo');
+    const otroMotivoInput = document.getElementById('otroMotivo');
+
+
+    motivoSelect.addEventListener('change', function () {
+
+        if (motivoSelect.value === 'OTRO') {
+            otroMotivoInput.style.display = 'block';
+        } else {
+            otroMotivoInput.style.display = 'none';
+        }
+    });
+</script>

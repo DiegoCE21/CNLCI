@@ -1,0 +1,208 @@
+﻿@using System.Security.Claims
+
+
+@if (Request.IsAuthenticated)
+{
+    var tipoAcceso = ClaimsPrincipal.Current.FindFirst("tipoAcceso")?.Value;
+
+    if (@tipoAcceso.Contains("Administrador"))
+    {
+        <ul class="navbar-nav flex-grow-1 lol">
+            <li>
+                <div class="container" style="color:white">
+                    <ion-icon name="reader-outline"></ion-icon>
+                    <div class="nav-item dropdown " style="position:relative">
+                        <a class="nav-link dropdown-toggle lol" href="#" id="reportes" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Justificantes
+
+                        </a>
+                        <div class="dropdown-menu " aria-labelledby="reportes">
+                            <a class="dropdown-item" href="@Url.Action("Justificante", "Justificantes")"><ion-icon name="person-circle-outline"></ion-icon>  Justificante por alumno</a>
+                            <a class="dropdown-item" href="@Url.Action("JGrupal", "Justificantes")"><ion-icon name="people-circle-outline"></ion-icon>  Justificante por grupo</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            @*<li>
+                    <div class="container" style="color:white">
+                        <ion-icon name="reader-outline"></ion-icon>
+                        @Html.ActionLink("Justificante", "Justificante", "Justificantes", new { area = "" }, new { @class = "nav-link lol" })
+                    </div>
+                </li>*@
+            <li>
+                <div class="container" style="color:white">
+                    <ion-icon name="id-card-outline"></ion-icon>
+                    @Html.ActionLink("Pase de salida", "PaseDeSalida", "Justificantes", new { area = "" }, new { @class = "nav-link lol" })
+                </div>
+            </li>
+            <li>
+                <div class="container" style="color:white">
+                    <ion-icon name="podium-outline"></ion-icon>
+                    <div class="nav-item dropdown " style="position:relative">
+                        <a class="nav-link dropdown-toggle lol" href="#" id="reportes" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Reportes
+
+                        </a>
+                        <div class="dropdown-menu " aria-labelledby="reportes">
+                            <a class="dropdown-item" href="@Url.Action("PorAlumno", "Reportes")"><ion-icon name="person-circle-outline"></ion-icon>  Reporte por alumno</a>
+                            <a class="dropdown-item" href="@Url.Action("PorGrupo", "Reportes")"><ion-icon name="people-circle-outline"></ion-icon>  Reporte por grupo</a>
+                            <a class="dropdown-item" href="@Url.Action("PorCarrera", "Reportes")"><ion-icon name="book-outline"></ion-icon>  Reporte por carrera</a>
+                            <a class="dropdown-item" href="@Url.Action("PorMotivo", "Reportes")"><ion-icon name="calendar-outline"></ion-icon>  Reporte por motivo</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="container" style="color:white">
+                    <ion-icon name="podium-outline"></ion-icon>
+                    <div class="nav-item dropdown " style="position:relative">
+                        <a class="nav-link dropdown-toggle lol" href="#" id="reportes" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Historial
+
+                        </a>
+                        <div class="dropdown-menu " aria-labelledby="reportes">
+
+                            <a class="dropdown-item" href="@Url.Action("Justificante", "Historial")"><ion-icon name="reader-outline"></ion-icon>  Justificantes</a>
+                            <a class="dropdown-item" href="@Url.Action("PaseS", "Historial")"><ion-icon name="id-card-outline"></ion-icon>  Pases de salida</a>
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="container" style="color:white">
+                    <ion-icon name="settings-outline"></ion-icon>
+                    <div class="nav-item dropdown " style="position:relative">
+                        <a class="nav-link dropdown-toggle lol" href="#" id="configuraciones" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Configuraciones
+                        </a>
+                        <div class="dropdown-menu " aria-labelledby="configuraciones">
+                            <!-- <a class="dropdown-item" href="Url.Action("Importar", "Configuracion")"><ion-icon name="people-outline"></ion-icon>  Alumnos</a>-->
+
+                            <a class="dropdown-item" href="@Url.Action("Importar", "Configuracion")"><ion-icon name="server-outline"></ion-icon>  Base de datos</a>
+                            <a class="dropdown-item" href="@Url.Action("Usuarios", "Configuracion")"><ion-icon name="id-card-outline"></ion-icon>  Usuarios</a>
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    }
+    else if (tipoAcceso.Contains("Docente"))
+    {
+        // Código HTML solo para docentes (solo la primera lista)
+        <ul class="navbar-nav flex-grow-1 lol">
+            <li>
+                <div class="container" style="color:white">
+                    <div class="nav-item dropdown " style="position:relative">
+                        <a class="nav-link lol" aria-haspopup="true" aria-expanded="false" href="@Url.Action("Justificante", "Historial")"><ion-icon name="reader-outline"></ion-icon>  Justificantes</a>
+                        <a class="nav-link lol" aria-haspopup="true" aria-expanded="false" href="@Url.Action("PaseS", "Historial")"><ion-icon name="id-card-outline"></ion-icon>  Pases de salida</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    }
+    else if (tipoAcceso.Contains("Alumno"))
+    {
+        <ul class="navbar-nav flex-grow-1 lol">
+            <li>
+                <div class="container" style="color:white">
+                    <a class="nav-link" href="@Url.Action("Justificante", "Historial")">
+                        <ion-icon name="reader-outline"></ion-icon> Mis justificantes
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="container" style="color:white">
+                    <a class="nav-link" href="@Url.Action("PaseS", "Historial")">
+                        <ion-icon name="id-card-outline"></ion-icon> Mis pases de salida
+                    </a>
+                </div>
+            </li>
+        </ul>
+    }
+    else if (@tipoAcceso.Contains("Coordinador"))
+    {
+        <ul class="navbar-nav flex-grow-1 lol">
+            <li>
+                <div class="container" style="color:white">
+                    <ion-icon name="reader-outline"></ion-icon>
+                    <div class="nav-item dropdown " style="position:relative">
+                        <a class="nav-link dropdown-toggle lol" href="#" id="reportes" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Justificantes
+
+                        </a>
+                        <div class="dropdown-menu " aria-labelledby="reportes">
+                            <a class="dropdown-item" href="@Url.Action("Justificante", "Justificantes")"><ion-icon name="person-circle-outline"></ion-icon>  Justificante por alumno</a>
+                            <a class="dropdown-item" href="@Url.Action("JGrupal", "Justificantes")"><ion-icon name="people-circle-outline"></ion-icon>  Justificante por grupo</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            @*<li>
+                    <div class="container" style="color:white">
+                        <ion-icon name="reader-outline"></ion-icon>
+                        @Html.ActionLink("Justificante", "Justificante", "Justificantes", new { area = "" }, new { @class = "nav-link lol" })
+                    </div>
+                </li>*@
+            <li>
+                <div class="container" style="color:white">
+                    <ion-icon name="id-card-outline"></ion-icon>
+                    @Html.ActionLink("Pase de salida", "PaseDeSalida", "Justificantes", new { area = "" }, new { @class = "nav-link lol" })
+                </div>
+            </li>
+            <li>
+                <div class="container" style="color:white">
+                    <ion-icon name="podium-outline"></ion-icon>
+                    <div class="nav-item dropdown " style="position:relative">
+                        <a class="nav-link dropdown-toggle lol" href="#" id="reportes" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Reportes
+
+                        </a>
+                        <div class="dropdown-menu " aria-labelledby="reportes">
+                            <a class="dropdown-item" href="@Url.Action("PorAlumno", "Reportes")"><ion-icon name="person-circle-outline"></ion-icon>  Reporte por alumno</a>
+                            <a class="dropdown-item" href="@Url.Action("PorGrupo", "Reportes")"><ion-icon name="people-circle-outline"></ion-icon>  Reporte por grupo</a>
+                            <a class="dropdown-item" href="@Url.Action("PorCarrera", "Reportes")"><ion-icon name="book-outline"></ion-icon>  Reporte por carrera</a>
+                            <a class="dropdown-item" href="@Url.Action("PorMotivo", "Reportes")"><ion-icon name="calendar-outline"></ion-icon>  Reporte por motivo</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="container" style="color:white">
+                    <ion-icon name="podium-outline"></ion-icon>
+                    <div class="nav-item dropdown " style="position:relative">
+                        <a class="nav-link dropdown-toggle lol" href="#" id="reportes" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Historial
+
+                        </a>
+                        <div class="dropdown-menu " aria-labelledby="reportes">
+
+                            <a class="dropdown-item" href="@Url.Action("Justificante", "Historial")"><ion-icon name="reader-outline"></ion-icon>  Justificantes</a>
+                            <a class="dropdown-item" href="@Url.Action("PaseS", "Historial")"><ion-icon name="id-card-outline"></ion-icon>  Pases de salida</a>
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    }
+
+    <ul class="navbar-nav navbar-right lol">
+        <li>
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle lol" href="#" id="usuario" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    @User.Identity.Name
+
+
+                </a>
+                <div class="dropdown-menu" aria-labelledby="usuario">
+                    <a class="dropdown-item" href="@Url.Action("SignOut", "Account")"><ion-icon name="log-out-outline"></ion-icon>  Cerrar sesión</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+}
+

@@ -1,0 +1,27 @@
+@model IEnumerable<CNLCI.Models.ViewModel.MJ>
+
+
+
+@foreach (var datos in Model)
+{
+    <div class="container">
+        <div>
+            <div class="columns">
+                <div class="column is-half">
+                    <div class="field is-horizontal">
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Plan de Estudios" value="@datos.Plan_de_Estudios" readonly name="PlanDeEstudios" id="IDCARRERA" />
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="field">
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Grupo" value="@datos.Grupo_Referente" readonly name="Grupo" id="IDGRUPO" )">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

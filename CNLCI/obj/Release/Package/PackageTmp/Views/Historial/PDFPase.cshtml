@@ -1,0 +1,156 @@
+﻿@model CNLCI.Models.ViewModel.P
+@{
+    ViewBag.Title = "PDFPase";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+            .header img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+            }
+
+        .pase-de-salida {
+            font-family: 'Arial Black', sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .info {
+            text-align: right;
+        }
+
+        .left-info {
+            text-align: left;
+            // margin-right: 25%;
+        }
+
+        .right-info {
+            text-align: right;
+        }
+
+        .dynamic-content {
+            border-bottom: 1px solid black; /* Línea debajo del contenido dinámico */
+            padding-bottom: 5px; /* Espacio entre el contenido y la línea */
+        }
+
+        .ne {
+            font-weight: bold;
+            font-family: 'Arial Black', sans-serif;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="~/Style/assets/conjunto.jpg" alt="Imagen" style=" height: 2cm;">
+    </div>
+    <p class="pase-de-salida"><b>Pase de salida</b></p>
+    <p class="right-info">
+        <span class="ne">No. de pase:  </span>@Model.No__pase &emsp;&emsp;  <br />
+        <span class="ne">Fecha y hora de salida:  </span>@Model.Fecha &emsp; &emsp;
+    </p>
+    <br /><br />
+    <p class="left-info">
+        <span class="ne">Nombre:&emsp; </span>
+        <span style="text-decoration: underline;">&emsp;&emsp;&emsp;&emsp;  @Model.Nombre @Model.Primer_apellido @Model.Segundo_apellido&emsp; &emsp;&emsp;&emsp;</span>
+        <span class="ne">&emsp;&emsp; Matrícula:&emsp; </span>
+        <span style="text-decoration: underline;">&emsp;&emsp;&emsp; @Model.Matricula&emsp;&emsp;&emsp;</span>
+    </p>
+    <p class="left-info">
+        <span class="ne">Grupo:&emsp; </span>
+        <span style="text-decoration: underline;">&emsp; @Model.Grupo_Referente&emsp;</span>
+        <span class="ne">&emsp;&emsp;Carrera:&emsp; </span>
+        <span style="text-decoration: underline;">&emsp;&emsp; @Model.Plan_de_Estudios &emsp; &emsp;</span>
+
+    </p>
+
+    <p class="left-info">
+        <span class="ne">Motivo de salida:&emsp; </span>
+        <span style="text-decoration: underline;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  @Model.Motivo &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;</span>
+    </p>
+    <p class="left-info">
+        <span class="ne">Quien autoriza:&emsp; </span>
+        <span style="text-decoration: underline;">&emsp; @Model.Autoriza&emsp;</span>
+        <span class="ne">&emsp;&emsp;Parentezco:&emsp; </span>
+        <span style="text-decoration: underline;">&emsp;  @Model.Parentezco &emsp;&emsp;</span>
+
+    </p>
+    <br /><br />
+    <p class="left-info">
+        <span>&emsp;&emsp;&emsp;&emsp;&emsp;Firma de autorización del administrativo</span>
+
+        <span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Firma del alumno </span>
+    </p><br /><br />
+    <p class="left-info">
+        &emsp;&emsp; &emsp;<span style="text-decoration: underline;">
+    &emsp;&emsp;&emsp;&emsp;&emsp;@Model.ElaboradoPor &emsp;&emsp;&emsp;&emsp;&emsp;
+</span>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+
+        <span style="text-decoration: underline;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span>
+    </p>
+
+    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    <p class="pase-de-salida"><b>Pase de salida (Copia)</b></p>
+    <p class="right-info">
+        <span class="ne">No. de pase:  </span>@Model.No__pase &emsp;&emsp;  <br />
+        <span class="ne">Fecha y hora de salida:  </span>@Model.Fecha &emsp; &emsp;
+    </p>
+    <br /><br />
+    <p class="left-info">
+        <span class="ne">Nombre:&emsp; </span>
+        <span style="text-decoration: underline;">&emsp;&emsp;&emsp;&emsp;  @Model.Nombre @Model.Primer_apellido @Model.Segundo_apellido&emsp; &emsp;&emsp;&emsp;</span>
+        <span class="ne">&emsp;&emsp; Matrícula:&emsp; </span>
+        <span style="text-decoration: underline;">&emsp;&emsp;&emsp; @Model.Matricula&emsp;&emsp;&emsp;</span>
+    </p>
+    <p class="left-info">
+        <span class="ne">Grupo:&emsp; </span>
+        <span style="text-decoration: underline;">&emsp; @Model.Grupo_Referente&emsp;</span>
+        <span class="ne">&emsp;&emsp;Carrera:&emsp; </span>
+        <span style="text-decoration: underline;">&emsp;&emsp; @Model.Plan_de_Estudios &emsp; &emsp;</span>
+
+    </p>
+
+    <p class="left-info">
+        <span class="ne">Motivo de salida:&emsp; </span>
+        <span style="text-decoration: underline;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  @Model.Motivo &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;</span>
+    </p>
+    <p class="left-info">
+        <span class="ne">Quien autoriza:&emsp; </span>
+        <span style="text-decoration: underline;">&emsp; @Model.Autoriza&emsp;</span>
+        <span class="ne">&emsp;&emsp;Parentezco:&emsp; </span>
+        <span style="text-decoration: underline;">&emsp;  @Model.Parentezco &emsp;&emsp;</span>
+
+    </p>
+    <br /><br />
+    <p class="left-info">
+        <span>&emsp;&emsp;&emsp;&emsp;&emsp;Firma de autorización del administrativo</span>
+
+        <span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Firma del alumno </span>
+    </p><br /><br />
+    <p class="left-info">
+        &emsp;&emsp; &emsp;<span style="text-decoration: underline;">
+    &emsp;&emsp;&emsp;&emsp;&emsp;@Model.ElaboradoPor &emsp;&emsp;&emsp;&emsp;&emsp;
+</span>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+
+        <span style="text-decoration: underline;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span>
+    </p>
+</body>
+</html>

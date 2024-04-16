@@ -1,0 +1,63 @@
+@{
+    ViewBag.Title = "Add Users";
+}
+
+@model List<CNLCI.Models.Usuarios>
+
+<h3>Añade el correo del nuevo usuario</h3>
+@using (Html.BeginForm("AgregarUsuario", "Configuracion", FormMethod.Post))
+{
+<div class="control has-icons-left has-icons-right">
+    @Html.TextBox("correo", null, new { @class = "input is-large", placeholder = "Correo electrónico" })
+    <span class="icon is-medium is-left">
+        <i class="fas fa-envelope"></i>
+    </span>
+    <span class="icon is-medium is-right">
+        <i class="fas fa-check"></i>
+    </span>
+    @Html.ValidationMessage("correo", "", new { @class = "text-danger" })
+</div>
+<br />
+<button type="submit" class="button is-link">Añadir usuario</button>
+}
+
+<h2>Usuarios Registrados</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Correo</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var usuario in Model)
+        {
+        <tr>
+            <td>@usuario.Correo</td>
+            <td>
+                @Html.ActionLink("Editar", "EditarUsuario", new { id = usuario.IdUsuario }, new { @class = "btn btn-primary" })
+                @using (Html.BeginForm("EliminarUsuario", "Configuracion", new { id = usuario.IdUsuario }, FormMethod.Post, new { onsubmit = "return confirm('¿Estás seguro de querer eliminar este usuario?');" }))
+                    {
+                <button type="submit" class="btn btn-danger">Eliminar</button>
+                    }
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+
+@if (!ViewData.ModelState.IsValid)
+{
+<div class="alert alert-danger">
+    <ul>
+        @foreach (var key in ViewData.ModelState.Keys)
+            {
+                foreach (var error in ViewData.ModelState[key].Errors)
+                {
+        <li>@error.ErrorMessage</li>
+                }
+            }
+    </ul>
+</div>
+}

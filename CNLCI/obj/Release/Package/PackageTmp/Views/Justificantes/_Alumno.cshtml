@@ -1,0 +1,157 @@
+﻿@model IEnumerable<CNLCI.Models.Alumno>
+
+
+@foreach (var datos in Model)
+{
+    <div class="container">
+        <div class="Marco">
+            <div class="columns ">
+                <div class="column is-half">
+                    <div class="field">
+
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Nombre(s)" value="@datos.Nombre" readonly name="Nombre" id="IDNOMBRE" />
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="field">
+
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Apellido paterno" value="@datos.Primer_apellido" readonly name="Primer_apellido" id="IDAPELLIDOP">
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="field">
+
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Apellido materno" value="@datos.Segundo_apellido" readonly name="Segundo_apellido" id="IDAPELLIDOS">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-one-quarter">
+                    <div class="field">
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Matrícula" value="@datos.Matricula" readonly name="Matricula" id="MATRICULA">
+                        </div>
+                    </div>
+                </div>
+
+                @Html.Partial("_Carrera")
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="Marco">
+            <div class="columns">
+                @Html.Partial("_Motivo")
+                <div class="column is-2-4">
+                    <div class="column">
+                        <div class="control">
+                            <div style=" width: 100%">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" style="text-align: left;">
+        <div class="Marco">
+            <div class="field is-horizontal">
+                <div class="field-label is-normal is-flex is-align-items-center">
+                    <label class="label">Fecha</label>
+                </div>
+                <div class="field-body has-addons-centered">
+                    <div class="column">
+                        <div class="field">
+                            <div class="control">
+
+                                <label class="radio">
+                                    <input type="radio" name="fecha" value="unica" onclick="habilitarFecha()" checked>
+                                    <b>Única</b>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+
+                                <input class="input" type="date" id="fecha1" name="fecha1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="field">
+                            <div class="control">
+
+                                <label class="radio">
+                                    <input type="radio" name="fecha" value="extendida" onclick="habilitarExtendida()">
+                                    <b>Extendida</b>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="field is-horizontal" id="extendidaFields">
+                            <div class="field">
+                                <div class="control">
+                                    <label class="label">Del día</label>
+
+                                    <input class="input" type="date" id="fechaDelDia" name="fechaDelDia" disabled>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+
+                                    <label class="label">Al día</label>
+                                    <input class="input" type="date" id="fechaAlDia" name="fechaAlDia" disabled>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="Marco">
+            <div class="field is-horizontal">
+                <div class="field-label is-flex">
+                    <div class="column is-2-4">
+                        <center>
+                            <label class="label">Seleccionar archivo como comprobante</label>
+                            <br />
+                            <br />
+                            <input type="file" name="archivo" id="archivo" accept="application/pdf">
+                        </center>
+                    </div>
+                    <div class="column is-2-4">
+                        <center> <label class="label">Observaciones</label></center>
+                        <div class="file is-primary has-name">
+
+                            <textarea class="textarea is-primary" name="Observaciones" rows="4" id="Observaciones"></textarea>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+}
+
+
+
