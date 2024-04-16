@@ -1,0 +1,199 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\CNLCI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2430B4DB-19B0-40BD-8A23-CDDE5F883C7D}|CNLCI\\CNLCI.csproj|C:\\Users\\User\\source\\repos\\CNLCI\\CNLCI\\Views\\Justificantes\\_Alumno.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2430B4DB-19B0-40BD-8A23-CDDE5F883C7D}|CNLCI\\CNLCI.csproj|solutionrelative:CNLCI\\Views\\Justificantes\\_Alumno.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2430B4DB-19B0-40BD-8A23-CDDE5F883C7D}|CNLCI\\CNLCI.csproj|C:\\Users\\User\\source\\repos\\CNLCI\\CNLCI\\Web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{2430B4DB-19B0-40BD-8A23-CDDE5F883C7D}|CNLCI\\CNLCI.csproj|solutionrelative:CNLCI\\Web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2430B4DB-19B0-40BD-8A23-CDDE5F883C7D}|CNLCI\\CNLCI.csproj|C:\\Users\\User\\source\\repos\\CNLCI\\CNLCI\\Controllers\\ReportesController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2430B4DB-19B0-40BD-8A23-CDDE5F883C7D}|CNLCI\\CNLCI.csproj|solutionrelative:CNLCI\\Controllers\\ReportesController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2430B4DB-19B0-40BD-8A23-CDDE5F883C7D}|CNLCI\\CNLCI.csproj|c:\\users\\user\\source\\repos\\cnlci\\cnlci\\views\\reportes\\poralumnomodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2430B4DB-19B0-40BD-8A23-CDDE5F883C7D}|CNLCI\\CNLCI.csproj|solutionrelative:cnlci\\views\\reportes\\poralumnomodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2430B4DB-19B0-40BD-8A23-CDDE5F883C7D}|CNLCI\\CNLCI.csproj|c:\\users\\user\\source\\repos\\cnlci\\cnlci\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2430B4DB-19B0-40BD-8A23-CDDE5F883C7D}|CNLCI\\CNLCI.csproj|solutionrelative:cnlci\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2430B4DB-19B0-40BD-8A23-CDDE5F883C7D}|CNLCI\\CNLCI.csproj|c:\\users\\user\\source\\repos\\cnlci\\cnlci\\views\\reportes\\porgrupo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2430B4DB-19B0-40BD-8A23-CDDE5F883C7D}|CNLCI\\CNLCI.csproj|solutionrelative:cnlci\\views\\reportes\\porgrupo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2430B4DB-19B0-40BD-8A23-CDDE5F883C7D}|CNLCI\\CNLCI.csproj|c:\\users\\user\\source\\repos\\cnlci\\cnlci\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2430B4DB-19B0-40BD-8A23-CDDE5F883C7D}|CNLCI\\CNLCI.csproj|solutionrelative:cnlci\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2430B4DB-19B0-40BD-8A23-CDDE5F883C7D}|CNLCI\\CNLCI.csproj|C:\\Users\\User\\source\\repos\\CNLCI\\CNLCI\\Models\\Justificante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2430B4DB-19B0-40BD-8A23-CDDE5F883C7D}|CNLCI\\CNLCI.csproj|solutionrelative:CNLCI\\Models\\Justificante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2430B4DB-19B0-40BD-8A23-CDDE5F883C7D}|CNLCI\\CNLCI.csproj|c:\\users\\user\\source\\repos\\cnlci\\cnlci\\controllers\\justificantescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2430B4DB-19B0-40BD-8A23-CDDE5F883C7D}|CNLCI\\CNLCI.csproj|solutionrelative:cnlci\\controllers\\justificantescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2430B4DB-19B0-40BD-8A23-CDDE5F883C7D}|CNLCI\\CNLCI.csproj|C:\\Users\\User\\source\\repos\\CNLCI\\CNLCI\\Views\\Justificantes\\Justificante.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2430B4DB-19B0-40BD-8A23-CDDE5F883C7D}|CNLCI\\CNLCI.csproj|solutionrelative:CNLCI\\Views\\Justificantes\\Justificante.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Alumno.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\CNLCI\\CNLCI\\Views\\Justificantes\\_Alumno.cshtml",
+              "RelativeDocumentMoniker": "CNLCI\\Views\\Justificantes\\_Alumno.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\CNLCI\\CNLCI\\Views\\Justificantes\\_Alumno.cshtml",
+              "RelativeToolTip": "CNLCI\\Views\\Justificantes\\_Alumno.cshtml",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAYwF0AAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-11T20:44:03.424Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PorGrupo.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\CNLCI\\CNLCI\\Views\\Reportes\\PorGrupo.cshtml",
+              "RelativeDocumentMoniker": "CNLCI\\Views\\Reportes\\PorGrupo.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\CNLCI\\CNLCI\\Views\\Reportes\\PorGrupo.cshtml",
+              "RelativeToolTip": "CNLCI\\Views\\Reportes\\PorGrupo.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-12T18:11:42.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\CNLCI\\CNLCI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CNLCI\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\CNLCI\\CNLCI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CNLCI\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAYwEAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-12T18:07:53.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\CNLCI\\CNLCI\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "CNLCI\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\CNLCI\\CNLCI\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "CNLCI\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAAAUAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-12T17:59:41.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PorAlumnoModal.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\CNLCI\\CNLCI\\Views\\Reportes\\PorAlumnoModal.cshtml",
+              "RelativeDocumentMoniker": "CNLCI\\Views\\Reportes\\PorAlumnoModal.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\CNLCI\\CNLCI\\Views\\Reportes\\PorAlumnoModal.cshtml",
+              "RelativeToolTip": "CNLCI\\Views\\Reportes\\PorAlumnoModal.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-12T17:55:05.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "JustificantesController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\CNLCI\\CNLCI\\Controllers\\JustificantesController.cs",
+              "RelativeDocumentMoniker": "CNLCI\\Controllers\\JustificantesController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\CNLCI\\CNLCI\\Controllers\\JustificantesController.cs",
+              "RelativeToolTip": "CNLCI\\Controllers\\JustificantesController.cs",
+              "ViewState": "AQIAAOAAAAAAAAAAAAAtwNQAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T19:36:16.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReportesController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\CNLCI\\CNLCI\\Controllers\\ReportesController.cs",
+              "RelativeDocumentMoniker": "CNLCI\\Controllers\\ReportesController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\CNLCI\\CNLCI\\Controllers\\ReportesController.cs",
+              "RelativeToolTip": "CNLCI\\Controllers\\ReportesController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T23:19:04.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Justificante.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\CNLCI\\CNLCI\\Models\\Justificante.cs",
+              "RelativeDocumentMoniker": "CNLCI\\Models\\Justificante.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\CNLCI\\CNLCI\\Models\\Justificante.cs",
+              "RelativeToolTip": "CNLCI\\Models\\Justificante.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwBUAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T23:18:19.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Justificante.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\CNLCI\\CNLCI\\Views\\Justificantes\\Justificante.cshtml",
+              "RelativeDocumentMoniker": "CNLCI\\Views\\Justificantes\\Justificante.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\CNLCI\\CNLCI\\Views\\Justificantes\\Justificante.cshtml",
+              "RelativeToolTip": "CNLCI\\Views\\Justificantes\\Justificante.cshtml",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAFkAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-09T20:09:07.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\CNLCI\\CNLCI\\Web.config",
+              "RelativeDocumentMoniker": "CNLCI\\Web.config",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\CNLCI\\CNLCI\\Web.config",
+              "RelativeToolTip": "CNLCI\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-03-17T04:07:20.167Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

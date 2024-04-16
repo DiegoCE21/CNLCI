@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\CNLCI",
+    "\\CNLCI\\Controllers",
+    "\\CNLCI\\Models",
+    "\\CNLCI\\Views",
+    "\\CNLCI\\Views\\Configuracion",
+    "\\CNLCI\\Views\\Historial",
+    "\\CNLCI\\Views\\Justificantes",
+    "\\CNLCI\\Views\\Reportes",
+    "\\CNLCI\\Views\\Shared"
+  ],
+  "SelectedNode": "\\CNLCI\\Views\\Justificantes\\_Alumno.cshtml",
+  "PreviewInSolutionExplorer": false
+}

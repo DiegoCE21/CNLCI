@@ -1,0 +1,490 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MailSenders</name>
+    </assembly>
+    <members>
+        <member name="T:KamilSzymborski.MailSenders.AOLSender">
+            <header>
+    <summary>
+      [587] [smtp.aol.com] AOL sender.
+      <para />
+      Note: go to account security -&gt; allow apps that use less secure sign-in.
+    </summary>
+  </header>
+        </member>
+        <member name="M:KamilSzymborski.MailSenders.AOLSender.#ctor(System.String,System.String)">
+            <constructor name="(string, string)">
+    <summary>
+      Creates AOL sender.
+    </summary>
+    <param name="Login">
+      e-mail address.
+    </param>
+    <param name="Password">
+      e-mail password or special e-mail password for applications.
+    </param>
+  </constructor>
+        </member>
+        <member name="T:KamilSzymborski.MailSenders.Attachment">
+            <header>
+    <summary>
+      Attachment.
+    </summary>
+  </header>
+        </member>
+        <member name="M:KamilSzymborski.MailSenders.Attachment.FromFile(System.String,System.String)">
+            <method name="FromFile(string, string)">
+    <summary>
+      Creates attachment from file.
+    </summary>
+    <remarks>
+      Not buffered.
+    </remarks>
+    <param name="Path">
+      file path.
+    </param>
+    <param name="DisplayName">
+      [can be null] base name / display name.
+    </param>
+    <returns>
+      attachment.
+    </returns>
+  </method>
+        </member>
+        <member name="M:KamilSzymborski.MailSenders.Attachment.#ctor(System.Byte[],System.String)">
+            <constructor name="(byte[], string)">
+    <summary>
+      Creates Attachment.
+    </summary>
+    <param name="Data">
+      raw data.
+    </param>
+    <param name="FileName">
+      name with extension.
+    </param>
+  </constructor>
+        </member>
+        <member name="P:KamilSzymborski.MailSenders.Attachment.Data">
+            <property name="Data">
+    <summary>
+      Raw data of file.
+    </summary>
+  </property>
+        </member>
+        <member name="P:KamilSzymborski.MailSenders.Attachment.FileName">
+            <property name="FileName">
+    <summary>
+      File name (name + extension) of attachment.
+    </summary>
+  </property>
+        </member>
+        <member name="T:KamilSzymborski.MailSenders.GMailSender">
+            <header>
+    <summary>
+      [587] [smtp.gmail.com] GMail sender.
+      <para />
+      Note: go to https://myaccount.google.com/lesssecureapps and set "Allow less secure apps" to ON.
+    </summary>
+  </header>
+        </member>
+        <member name="M:KamilSzymborski.MailSenders.GMailSender.#ctor(System.String,System.String)">
+            <constructor name="(string, string)">
+    <summary>
+      Creates GMail sender.
+    </summary>
+    <param name="Login">
+      e-mail address.
+    </param>
+    <param name="Password">
+      e-mail password or special e-mail password for applications.
+    </param>
+  </constructor>
+        </member>
+        <member name="T:KamilSzymborski.MailSenders.Priority">
+            <header>
+    <summary>
+      E-mail priority.
+    </summary>
+  </header>
+        </member>
+        <member name="F:KamilSzymborski.MailSenders.Priority.Low">
+            <summary>
+      Low priority.
+    </summary>
+        </member>
+        <member name="F:KamilSzymborski.MailSenders.Priority.Normal">
+            <summary>
+      Normal priority.
+    </summary>
+        </member>
+        <member name="F:KamilSzymborski.MailSenders.Priority.High">
+            <summary>
+      High priority.
+    </summary>
+        </member>
+        <member name="T:KamilSzymborski.MailSenders.MailSender">
+            <header>
+    <summary>
+      [587] [smtp.mail.com] Mail sender.
+      <para />
+      Note: you do not have to do anything.
+    </summary>
+    <remarks>
+      You do not have to do anything.
+    </remarks>
+  </header>
+        </member>
+        <member name="M:KamilSzymborski.MailSenders.MailSender.#ctor(System.String,System.String)">
+            <constructor name="(string, string)">
+    <summary>
+      Creates Mail sender.
+    </summary>
+    <param name="Login">
+      e-mail address.
+    </param>
+    <param name="Password">
+      e-mail password or special e-mail password for applications.
+    </param>
+  </constructor>
+        </member>
+        <member name="T:KamilSzymborski.MailSenders.OutlookSender">
+            <header>
+    <summary>
+      [587] [smtp-mail.outlook.com] Outlook sender.
+      <para />
+      Note: you do not have to do anything.
+    </summary>
+  </header>
+        </member>
+        <member name="M:KamilSzymborski.MailSenders.OutlookSender.#ctor(System.String,System.String)">
+            <constructor name="(string, string)">
+    <summary>
+      Creates Outlook sender.
+    </summary>
+    <param name="Login">
+      e-mail address.
+    </param>
+    <param name="Password">
+      e-mail password or special e-mail password for applications.
+    </param>
+  </constructor>
+        </member>
+        <member name="T:KamilSzymborski.MailSenders.Sender">
+            <header>
+    <summary>
+      Base mail sender - declare your own host and port.
+    </summary>
+  </header>
+        </member>
+        <member name="M:KamilSzymborski.MailSenders.Sender.#ctor(System.UInt32,System.String,System.String,System.String)">
+            <constructor name="(uint, string, string, string)">
+    <summary>
+      Declare your own host and port.
+    </summary>
+    <param name="Port">
+      get data from the supplier.
+    </param>
+    <param name="Host">
+      get data from the supplier.
+    </param>
+    <param name="Login">
+      e-mail address.
+    </param>
+    <param name="Password">
+      e-mail password or special e-mail password for applications.
+    </param>
+  </constructor>
+        </member>
+        <member name="E:KamilSzymborski.MailSenders.Sender.Failed">
+            <summary>
+      Failure. Raised only for asynchronous operations.
+    </summary>
+        </member>
+        <member name="E:KamilSzymborski.MailSenders.Sender.Sended">
+            <summary>
+      Success. Raised only for asynchronous operations.
+    </summary>
+        </member>
+        <member name="M:KamilSzymborski.MailSenders.Sender.Send(System.String,System.String,KamilSzymborski.MailSenders.Attachment[])">
+            <summary>
+      Sends the mail synchronously without a title.
+    </summary><param name="Message">
+      message in plain text or html.
+    </param><param name="Recipient">
+      recipient's email address.
+    </param><param name="Attachments">
+      attachments in the right (?) size.
+    </param><returns>
+      true if success.
+    </returns>
+        </member>
+        <member name="M:KamilSzymborski.MailSenders.Sender.Send(System.String,System.String,System.String,KamilSzymborski.MailSenders.Attachment[])">
+            <summary>
+      Sends the mail synchronously with a title.
+    </summary><param name="Title">
+      message title.
+    </param><param name="Message">
+      message in plain text or html.
+    </param><param name="Recipient">
+      recipient's email address.
+    </param><param name="Attachments">
+      attachments in the right (?) size.
+    </param><returns>
+      true if success.
+    </returns>
+        </member>
+        <member name="M:KamilSzymborski.MailSenders.Sender.Send(System.String,System.String,System.String,System.String,KamilSzymborski.MailSenders.Attachment[])">
+            <summary>
+      Sends the mail synchronously with a title and optionally with display name.
+    </summary><param name="Title">
+      message title.
+    </param><param name="Message">
+      message in plain text or html.
+    </param><param name="Recipient">
+      recipient's email address.
+    </param><param name="DisplayName">
+      [can be null] sender's name, for example: "Microsoft Corp.".
+      <para />
+      Note: may be ignored / overwritten by account settings.
+    </param><param name="Attachments">
+      attachments in the right (?) size.
+    </param><returns>
+      true if success.
+    </returns>
+        </member>
+        <member name="M:KamilSzymborski.MailSenders.Sender.Send(System.String,System.String,System.String,System.String,System.String,KamilSzymborski.MailSenders.Attachment[])">
+            <summary>
+      Sends the mail synchronously with a title and optionally with display name and replyer.
+    </summary><param name="Title">
+      message title.
+    </param><param name="Message">
+      message in plain text or html.
+    </param><param name="Recipient">
+      recipient's email address.
+    </param><param name="DisplayName">
+      [can be null] sender's name, for example: "Microsoft Corp.".
+      <para />
+      Note: may be ignored / overwritten by account settings.
+    </param><param name="Replyer">
+      [can be null] reply email address, for example: "no@reply.com".
+      <para />
+      Note: must be like an email address.
+    </param><param name="Attachments">
+      attachments in the right (?) size.
+    </param><returns>
+      true if success.
+    </returns>
+        </member>
+        <member name="M:KamilSzymborski.MailSenders.Sender.Send(System.String,System.String,System.String,System.String,System.String,System.Nullable{KamilSzymborski.MailSenders.Priority},KamilSzymborski.MailSenders.Attachment[])">
+            <summary>
+      Sends the mail synchronously with a title and optionally with display name, replyer and priority.
+    </summary><param name="Title">
+      message title.
+    </param><param name="Message">
+      message in plain text or html.
+    </param><param name="Recipient">
+      recipient's email address.
+    </param><param name="DisplayName">
+      [can be null] sender's name, for example: "Microsoft Corp.".
+      <para />
+      Note: may be ignored / overwritten by account settings.
+    </param><param name="Replyer">
+      [can be null] reply email address, for example: "no@reply.com".
+      <para />
+      Note: must be like an email address.
+    </param><param name="Priority">
+      [can be null] email priority.
+      <para />
+      Note: is not allowed / interpreted everywhere.
+    </param><param name="Attachments">
+      attachments in the right (?) size.
+    </param><returns>
+      true if success.
+    </returns>
+        </member>
+        <member name="M:KamilSzymborski.MailSenders.Sender.SendAsync(System.String,System.String,KamilSzymborski.MailSenders.Attachment[])">
+            <summary>
+      Sends the mail asynchronously without a title.
+    </summary><param name="Message">
+      message in plain text or html.
+    </param><param name="Recipient">
+      recipient's email address.
+    </param><param name="Attachments">
+      attachments in the right (?) size.
+    </param><returns>
+      true if success.
+    </returns>
+        </member>
+        <member name="M:KamilSzymborski.MailSenders.Sender.SendAsync(System.String,System.String,System.String,KamilSzymborski.MailSenders.Attachment[])">
+            <summary>
+      Sends the mail asynchronously with a title.
+    </summary><param name="Title">
+      message title.
+    </param><param name="Message">
+      message in plain text or html.
+    </param><param name="Recipient">
+      recipient's email address.
+    </param><param name="Attachments">
+      attachments in the right (?) size.
+    </param><returns>
+      true if success.
+    </returns>
+        </member>
+        <member name="M:KamilSzymborski.MailSenders.Sender.SendAsync(System.String,System.String,System.String,System.String,KamilSzymborski.MailSenders.Attachment[])">
+            <summary>
+      Sends the mail asynchronously with a title and optionally with display name.
+    </summary><param name="Title">
+      message title.
+    </param><param name="Message">
+      message in plain text or html.
+    </param><param name="Recipient">
+      recipient's email address.
+    </param><param name="DisplayName">
+      [can be null] sender's name, for example: "Microsoft Corp.".
+      <para />
+      Note: may be ignored / overwritten by account settings.
+    </param><param name="Attachments">
+      attachments in the right (?) size.
+    </param><returns>
+      true if success.
+    </returns>
+        </member>
+        <member name="M:KamilSzymborski.MailSenders.Sender.SendAsync(System.String,System.String,System.String,System.String,System.String,KamilSzymborski.MailSenders.Attachment[])">
+            <summary>
+      Sends the mail asynchronously with a title and optionally with display name and replyer.
+    </summary><param name="Title">
+      message title.
+    </param><param name="Message">
+      message in plain text or html.
+    </param><param name="Recipient">
+      recipient's email address.
+    </param><param name="DisplayName">
+      [can be null] sender's name, for example: "Microsoft Corp.".
+      <para />
+      Note: may be ignored / overwritten by account settings.
+    </param><param name="Replyer">
+      [can be null] reply email address, for example: "no@reply.com".
+      <para />
+      Note: must be like an email address.
+    </param><param name="Attachments">
+      attachments in the right (?) size.
+    </param><returns>
+      true if success.
+    </returns>
+        </member>
+        <member name="M:KamilSzymborski.MailSenders.Sender.SendAsync(System.String,System.String,System.String,System.String,System.String,System.Nullable{KamilSzymborski.MailSenders.Priority},KamilSzymborski.MailSenders.Attachment[])">
+            <summary>
+      Sends the mail asynchronously with a title and optionally with display name, replyer and priority.
+    </summary><param name="Title">
+      message title.
+    </param><param name="Message">
+      message in plain text or html.
+    </param><param name="Recipient">
+      recipient's email address.
+    </param><param name="DisplayName">
+      [can be null] sender's name, for example: "Microsoft Corp.".
+      <para />
+      Note: may be ignored / overwritten by account settings.
+    </param><param name="Replyer">
+      [can be null] reply email address, for example: "no@reply.com".
+      <para />
+      Note: must be like an email address.
+    </param><param name="Priority">
+      [can be null] email priority.
+      <para />
+      Note: is not allowed / interpreted everywhere.
+    </param><param name="Attachments">
+      attachments in the right (?) size.
+    </param><returns>
+      true if success.
+    </returns>
+        </member>
+        <member name="P:KamilSzymborski.MailSenders.Sender.Port">
+            <summary>
+      Port.
+    </summary>
+        </member>
+        <member name="P:KamilSzymborski.MailSenders.Sender.Host">
+            <summary>
+      Host.
+    </summary>
+        </member>
+        <member name="P:KamilSzymborski.MailSenders.Sender.Login">
+            <summary>
+      Login / e-mail address.
+    </summary>
+        </member>
+        <member name="P:KamilSzymborski.MailSenders.Sender.Password">
+            <summary>
+      Password.
+    </summary>
+        </member>
+        <member name="T:KamilSzymborski.MailSenders.YahooSender">
+            <header>
+    <summary>
+      [587] [smtp.mail.yahoo.com] Yahoo sender.
+      <para />
+      Note: go to account settings -&gt; account security -&gt; allow apps that use less secure sign-in.
+    </summary>
+  </header>
+        </member>
+        <member name="M:KamilSzymborski.MailSenders.YahooSender.#ctor(System.String,System.String)">
+            <constructor name="(string, string)">
+    <summary>
+      Creates Yahoo sender.
+    </summary>
+    <param name="Login">
+      e-mail address.
+    </param>
+    <param name="Password">
+      e-mail password or special e-mail password for applications.
+    </param>
+  </constructor>
+        </member>
+        <member name="T:KamilSzymborski.MailSenders.YandexSender">
+            <header>
+    <summary>
+      [587] [smtp.yandex.com] Yandex sender.
+      <para />
+      Note: you do not have to do anything.
+    </summary>
+  </header>
+        </member>
+        <member name="M:KamilSzymborski.MailSenders.YandexSender.#ctor(System.String,System.String)">
+            <constructor name="(string, string)">
+    <summary>
+      Creates Yandex sender.
+    </summary>
+    <param name="Login">
+      e-mail address.
+    </param>
+    <param name="Password">
+      e-mail password or special e-mail password for applications.
+    </param>
+  </constructor>
+        </member>
+        <member name="T:KamilSzymborski.MailSenders.ZohoSender">
+            <header>
+    <summary>
+      [587] [smtp.zoho.eu] Zoho sender.
+      <para />
+      Note: you do not have to do anything.
+    </summary>
+  </header>
+        </member>
+        <member name="M:KamilSzymborski.MailSenders.ZohoSender.#ctor(System.String,System.String)">
+            <constructor name="(string, string)">
+    <summary>
+      Creates Zoho sender.
+    </summary>
+    <param name="Login">
+      e-mail address.
+    </param>
+    <param name="Password">
+      e-mail password or special e-mail password for applications.
+    </param>
+  </constructor>
+        </member>
+    </members>
+</doc>
